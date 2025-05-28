@@ -1,0 +1,16 @@
+[
+  {
+    "title": "Climate Change: Arctic sea ice summer minimum | NOAA Climate.gov",
+    "type": "image_url",
+    "image_url": {
+      "url": "https://www.climate.gov/sites/default/files/styles/full_width_620_original_image/public/2021-12/ARC2021_SeaIceAge_1985_vs_2021_2000px.png?itok=sKp0kXYv"
+    }
+  },
+  {
+    "title": "About the data | National Snow and Ice Data Center",
+    "type": "image_url",
+    "image_url": {
+      "url": "https://nsidc.org/sites/default/files/images/Screenshot/arctic-sea-ice-daily-images-example.png"
+    }
+  }
+]

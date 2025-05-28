@@ -1,0 +1,14 @@
+# Ignore sensitive data and environments
+.env
+
+
+
+# Output folders or logs
+mm_data/
+X_notes_public_files/
+
+models/__pycache__/
+
+web_search/__pycache__/
+web_search/Search-Engines-Scraper
+

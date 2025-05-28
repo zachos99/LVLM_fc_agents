@@ -1,0 +1,20 @@
+<doc sitename="nsidc.org" title="Sea Ice Today" date="2025-05-06" url="https://nsidc.org/sea-ice-today" hostname="nsidc.org" fingerprint="fecb9bd1e0f627da">
+  <main>
+    <graphic src="/sites/default/files/styles/hero_logo_image_style/public/images/Logo/nasa-logo-web-rgb_0.png.webp?itok=T3Dxt5bL"/>
+    <head rend="h1">Sea Ice Today</head>
+    <head rend="h2">Featured Sea Ice Analysis</head>
+    <head rend="h2">Featured Sea Ice Tools</head>
+    <graphic src="/sites/default/files/styles/story_image_style/public/images/Data/screenshot-charctic-15-lowest-minima.png.webp?itok=bcrz-ivP" alt="15 lowest minima as of Nov-2022" title="15 lowest minima as of Nov-2022"/>
+    <head rend="h3">Charctic Interactive Sea Ice Graphing Tool</head>
+    <graphic src="/sites/default/files/styles/story_image_style/public/images/Screenshot/seaice-analysis-tool.png.webp?itok=xwhKLdWZ" alt="sea ice analysis tool screenshot" title="sea ice analysis tool screenshot"/>
+    <head rend="h3">Sea Ice Analysis Tool</head>
+    <graphic src="/sites/default/files/styles/story_image_style/public/images/Screenshot/seaice-extent-comparison-tool.png.webp?itok=T-f8-WQU" alt="sea ice extent comparison tool" title="sea ice extent comparison tool"/>
+    <head rend="h3">Sea ice extent spatial comparison tool</head>
+    <head rend="h2">About Sea Ice Today</head>
+    <p>The Arctic is warming faster than anywhere else on the planet, and as a result, sea ice in the Arctic Ocean is decreasing. Sea ice loss has far-reaching effects on the planet because the ice helps regulate Earth’s climate, influences global weather patterns, and affects ocean circulations. Sea Ice Today began as a way to make sea ice science and analysis more relevant and accessible. In combination, NASA data and NSIDC expertise provide easy-to-use resources and tools to increase our understanding of climate change in the Arctic.</p>
+    <p>Since 2007, this site has been a go-to source for blog-like insights, analysis, and data visualization tools that communicate how sea ice has been changing from year to year. We receive over two million page visits a year and our content is used by a wide range of users including journalists, the general public, academics, and scientists alike. Our analyses focus primarily on sea ice extent, which is a measurement of the area of ocean where there is at least some sea ice. In the Arctic, the annual minimum sea ice extent occurs in September and the annual sea ice maximum extent occurs in March. In the Antarctic, the minimum extent occurs in February and the maximum occurs in September. When compared with previous years and decadal averages, these periods when the annal extremes occur are particularly important indicators of how much ice is being lost over time.</p>
+    <p>This website is funded by NASA and managed by NSIDC that provides the latest satellite data and scientific analyses of sea ice conditions in the Arctic and around Antarctica. Sea Ice Today was originally known as Arctic Sea Ice News &amp; Analysis (ASINA) from 2007-2024, when we rebranded as Sea Ice Today.</p>
+    <p>Learn more about the history of Sea Ice Today and ASINA.</p>
+  </main>
+  <comments/>
+</doc>

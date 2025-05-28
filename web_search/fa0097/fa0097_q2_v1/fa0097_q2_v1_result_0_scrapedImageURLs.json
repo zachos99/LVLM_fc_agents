@@ -1,0 +1,26 @@
+[
+  {
+    "type": "image_url",
+    "image_url": {
+      "url": "https://nsidc.org/sites/default/files/styles/hero_logo_image_style/public/images/Logo/nasa-logo-web-rgb_0.png.webp?itok=T3Dxt5bL"
+    }
+  },
+  {
+    "type": "image_url",
+    "image_url": {
+      "url": "https://nsidc.org/sites/default/files/styles/story_image_style/public/images/Data/screenshot-charctic-15-lowest-minima.png.webp?itok=bcrz-ivP"
+    }
+  },
+  {
+    "type": "image_url",
+    "image_url": {
+      "url": "https://nsidc.org/sites/default/files/styles/story_image_style/public/images/Screenshot/seaice-analysis-tool.png.webp?itok=xwhKLdWZ"
+    }
+  },
+  {
+    "type": "image_url",
+    "image_url": {
+      "url": "https://nsidc.org/sites/default/files/styles/story_image_style/public/images/Screenshot/seaice-extent-comparison-tool.png.webp?itok=T-f8-WQU"
+    }
+  }
+]
