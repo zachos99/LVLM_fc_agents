@@ -1,7 +1,9 @@
 import requests
 import json
 import os
-from web_search.utils import scrape_multiple_urls, save_image_urls_from_links
+
+#web_search.
+from web_search.utils import scrape_multiple_urls, save_image_urls_from_links, build_excluded_query
 
 from dotenv import load_dotenv
 import os
@@ -12,11 +14,18 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 CSE_ID = os.getenv("CSE_ID")
 
+# Domains to exclude from search
+# "reddit.com" ??
+BLOCKED_DOMAINS = ["facebook.com", "instagram.com", "pinterest.com", "youtube.com", "x.com", "flickr.com"]
 
 
 
-def google_search_call(query, image_search, numResults):
+def google_search_call(base_query, image_search, numResults):
     url = 'https://www.googleapis.com/customsearch/v1'
+  
+    # Build query for domain exclusion
+    query = build_excluded_query(base_query, BLOCKED_DOMAINS)
+
     params = {
         'q': query,
         'key': GOOGLE_API_KEY,
@@ -70,18 +79,17 @@ def run_searches_from_query_file(entry_id, is_image_search=False, num_results=5)
 
 
 
-#run_searches_from_query_file('mi5078')
-
 
 
 
 """
     Test a specific query
+        (remove web_search. from imports if running inside web_search folder)
 """
-"""
-QUERY = "'Jackson Hinkle legal history"
+"""  
+QUERY = "International Space Station reflection in helmet visor images"
 QUERY_ID = "12testID34"
 IMAGE_SEARCH = False
-NUM_RESULTS = 6 # MAX 10
-search_and_scrap_results(QUERY,QUERY_ID,IMAGE_SEARCH,NUM_RESULTS)
+NUM_RESULTS = 5 # MAX 10
+search_and_scrap_results("./web_search",QUERY,QUERY_ID,IMAGE_SEARCH,NUM_RESULTS)
 """

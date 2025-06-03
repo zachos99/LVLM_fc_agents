@@ -19,7 +19,7 @@ Vision:
 
 
 
-def mm_inference_togetherai(system_prompt,user_prompt, model, image_url=None):
+def mm_inference_togetherai(system_prompt,user_prompt, model, image_url=None, max_tokens=1024, temperature=0.2):
 
     client = Together(api_key=TOGETHER_API_KEY)
 
@@ -40,16 +40,17 @@ def mm_inference_togetherai(system_prompt,user_prompt, model, image_url=None):
         "role": "user",
         "content": user_content
     })
+
     
     try:
         response = client.chat.completions.create(
             model=model,
             messages = messages,
-            max_tokens=1024,
-            temperature=0.2
+            max_tokens=max_tokens,
+            temperature=temperature
         )
 
-        print("\nResponse usage:",response.usage) 
+        print("\nResponse usage:",response.usage,"\n") 
         
         return response.choices[0].message.content
     

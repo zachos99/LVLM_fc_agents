@@ -30,7 +30,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 
 
-def mm_inference_openrouter(system_prompt, user_prompt, model, image_url=None):
+def mm_inference_openrouter(system_prompt, user_prompt, model, image_url=None, max_tokens=1024, temperature = 0.2):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=OPENROUTER_API_KEY,
@@ -58,8 +58,8 @@ def mm_inference_openrouter(system_prompt, user_prompt, model, image_url=None):
         completion = client.chat.completions.create(
             model=model, 
             messages=messages,
-            max_tokens=1024,
-            temperature = 0.2
+            max_tokens=max_tokens,
+            temperature = temperature
         )
 
         # Defensive check before accessing choices

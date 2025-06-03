@@ -229,37 +229,55 @@ def load_post_analysis(entry_id):
 
 
 
-def extract_and_save_queries(text,entry_id):
+def extract_and_save_queries(text,entry_id, version="version1"):
     """
     Extracts search queries from an LLM-generated text.
-    Assumes they are formatted as bullets or numbered list.
+    Assumes the model outputs a JSON list of objects with 'query' and 'search_type'.
     Saves it in JSON file
     """
-    lines = text.strip().splitlines()
-    queries = []
 
-    for line in lines:
+    try:
+        # Try to parse as JSON directly
+        queries = json.loads(text)
 
-        # Remove leading bullets, numbers, symbols (e.g., "•", "*", "1.", "-", etc.)
-        cleaned = re.sub(r'^[\s\*\-•\d\.\)]+', '', line).strip()
+        # Validate structure
+        structured_queries = []
+        for item in queries:
+            if isinstance(item, dict) and "query" in item and "search_type" in item:
+                structured_queries.append({
+                    "query": item["query"].strip(),
+                    "search_type": item["search_type"].strip().lower()
+                })
 
-        # Extract quoted query if it exists
-        match = re.search(r'"([^"]+)"', cleaned)
+    except Exception:
+        print("⚠️ Could not parse structured JSON. Falling back to line-by-line parsing.")
 
-        if match:
-            query = match.group(1).strip()
-        else:
-            query = cleaned  # assume full line is the query
+        # Fallback: parse unstructured list (bullets or lines)
+        lines = text.strip().splitlines()
+        structured_queries = []
 
-        # Basic sanity check
-        if len(query.split()) >= 3:  # optional: filter short noise
-            queries.append(query)
+        for line in lines:
+            cleaned = re.sub(r'^[\s\*\-•\d\.\)]+', '', line).strip()
+            match = re.search(r'"([^"]+)"', cleaned)
+            query = match.group(1).strip() if match else cleaned
+
+            if len(query.split()) >= 3:
+                structured_queries.append({
+                    "query": query,
+                    "search_type": "text"  # default fallback type
+                })
 
     # We add 'version1' for now in case we want to extract extra queries later
-    filepath = f"models/responses/{entry_id}_queries_version1.json"
+    filepath = f"models/responses/{entry_id}_queries_{version}.json"
 
     with open(filepath, 'w', encoding='utf-8') as f:
-        json.dump({"generated_queries": queries}, f, ensure_ascii=False, indent=2)
+        json.dump({"generated_queries": structured_queries}, f, ensure_ascii=False, indent=2)
 
 
 
+
+def remove_think_block(response_text):
+    """
+    Remove <think>...</think> block from the response of Deepseek
+    """
+    return re.sub(r"<think>.*?</think>", "", response_text, flags=re.DOTALL).strip()

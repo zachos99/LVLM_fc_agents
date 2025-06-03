@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "NASA astronaut spacewalk reflections helmet visor",
+      "search_type": "text"
+    },
+    {
+      "query": "space station Earth view astronaut helmet visor inconsistencies",
+      "search_type": "text"
+    },
+    {
+      "query": "astronaut helmet visor reflection spacewalk space station Earth",
+      "search_type": "image"
+    }
+  ]
+}

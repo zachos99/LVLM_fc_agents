@@ -39,14 +39,43 @@ def extract_and_fix_image_urls(xml_response, base_url):
 
 def fetch_dynamic_html(url):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=False) # --> Set false for debugging
         context = browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+            extra_http_headers={
+                "Accept-Language": "en-US,en;q=0.9"
+            },
             viewport={"width": 1280, "height": 800}
         )
         page = context.new_page()
-        page.goto(url, timeout=60000)
+
+        try:
+            page.goto(url, timeout=60000)
+        except Exception as e:
+            print(f"❌ Couldn't scrape: {url}\nReason: {e}")
+            return None, []
+
+        #################################
+        ## TO DISMISS COOKIES BANNERS ##
+        ###############################
+        cookie_texts = [
+       "Accept", "Continue", "Agree", "OK", "I agree", "AGREE", "Consent",
+       "Allow all", "Allow all cookies", "Accept all", "Accept all cookies",
+       "Accept All", "Agree & continue", "Accept cookies"]   
+        
+        # Build a combined selector
+        selector = ", ".join([f"button:has-text('{text}')" for text in cookie_texts])
+
+        try:
+            button = page.locator(selector).first
+            button.click(timeout=1500)
+            print("Clicked a cookie consent button!")
+        except:
+            print("")
+
+
         page.wait_for_timeout(5000)  # Wait 5s for JS to load
+
         #page.screenshot(path="screenshot.png", full_page=True)
         html = page.content()
         browser.close()
@@ -156,3 +185,10 @@ def save_image_urls_from_links(items, query_id,parent_dir):
 
 
 
+def build_excluded_query(base_query, blocked_domains):
+    """
+        Takes as input an array of blocked domains of Google Search 
+        and formats the query for the API 
+    """
+    exclusions = " ".join([f"-site:{domain}" for domain in blocked_domains])
+    return f"{base_query} {exclusions}".strip()
