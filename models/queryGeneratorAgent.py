@@ -38,12 +38,15 @@ Below is the structured analysis of the post:
 - Timestamp Notes: {structured.get("timestamp_consistency", "None")}
 
 Your task: Based on this information, generate optimized diverse search-engine ready queries to help gather useful evidence or context for the post. Give me {num_queries} for text and 1 for image search.
+For image-related queries:
+- If the image shows a specific person, place, or event that is named in the post, include that name in the image search query (e.g. "Elon Musk Cybertruck photo").
+- Only use visual descriptions (e.g. "man in suit") if the identity is unknown.
+- Prioritize queries that help visually confirm or refute the post, such as comparing two identities, locations, or known images of the subject.
 Important: Return a list of JSON objects, each containing:
 - "query": a search string
 - "search_type": either "text" or "image"
 Do not include any explanations, formatting, or labels — just return the JSON list.
 """
-
 
 
 def queryGeneratorAgent(entry_id, platform, model, num_queries, **kwargs):
@@ -77,8 +80,3 @@ def queryGeneratorAgent(entry_id, platform, model, num_queries, **kwargs):
 
     extract_and_save_queries(response, entry_id)
 
-
-
-
-#ENTRY_ID = 'mi5078'
-#queryGeneratorAgent(ENTRY_ID)

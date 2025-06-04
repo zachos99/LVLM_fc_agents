@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "Roman Empire territorial extent timeline",
+      "search_type": "text"
+    },
+    {
+      "query": "historical duration of Roman Empire influence in Europe and Middle East",
+      "search_type": "text"
+    },
+    {
+      "query": "Roman Empire map with duration of influence",
+      "search_type": "image"
+    }
+  ]
+}

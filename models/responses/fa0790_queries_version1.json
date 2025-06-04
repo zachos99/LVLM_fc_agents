@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "Nike CEO career progression from intern",
+      "search_type": "text"
+    },
+    {
+      "query": "Nike valuation growth 1988 to 2024",
+      "search_type": "text"
+    },
+    {
+      "query": "Nike CEO LinkedIn profile picture",
+      "search_type": "image"
+    }
+  ]
+}

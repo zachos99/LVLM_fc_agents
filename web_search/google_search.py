@@ -1,12 +1,16 @@
 import requests
 import json
 import os
+import random
+
 
 #web_search.
 from web_search.utils import scrape_multiple_urls, save_image_urls_from_links, build_excluded_query
 
 from dotenv import load_dotenv
 import os
+
+from search_engines import Google, http_client
 
 load_dotenv()
 
@@ -40,9 +44,19 @@ def google_search_call(base_query, image_search, numResults):
 
 
 
-def search_and_scrap_results(parent_dir, query, queryID, isImageSearch,numResults):
+def search_and_scrap_results(parent_dir, query, queryID, numResults, isImageSearch=False):
 
-    results = google_search_call(query,isImageSearch,numResults)
+    api_mode = False
+
+    if(api_mode):
+        print('\nAPI Mode...\n')
+        results = google_search_call(query,isImageSearch,numResults)
+    else:
+        print('\nSERP Scraping Mode...\n')
+        ########################################################################
+        # REPLACE IT WITH ANOTHER FUNCTION WHEN WE WILL ADD DIFFERENT ENGINES #
+        #######################################################################
+        results = serp_scraping_call(query,numResults)
 
     print(f"\nGoogle Search results for '{query}':\n")
     for item in results['items']:
@@ -72,15 +86,41 @@ def run_searches_from_query_file(entry_id, is_image_search=False, num_results=5)
     entry_dir = f"web_search/{entry_id}"
     os.makedirs(entry_dir, exist_ok=True)
 
-    for i, query in enumerate(queries):
-        query_id = f"{entry_id}_q{i+1}_v1"  # e.g., "post123_q1"
-        print(f"\n\n\n🔍 Running search for: {query} (Query ID: {query_id})")
-        search_and_scrap_results(entry_dir, query, query_id, is_image_search, num_results)
+    for i, query_obj in enumerate(queries):
+        query_text = query_obj.get("query")
+        search_type = query_obj.get("search_type", "text").lower()
+
+        if not query_text:
+            continue  # skip malformed entries
+
+        is_image_search = (search_type == "image")
+
+        query_id = f"{entry_id}_q{i+1}_v1" # e.g., "post123_q1"
+        print(f"\n\n\n🔍 Running {search_type} search for: {query_text} (Query ID: {query_id})")
+
+        search_and_scrap_results(entry_dir, query_text, query_id, num_results, is_image_search)
 
 
 
 
+def serp_scraping_call(query, num_results):
 
+    # Add website exceptions to the query and search Google
+    search_query = build_excluded_query(query, BLOCKED_DOMAINS)
+
+    engine = Google()
+    print("\n~~~~~~~~~~~~~~~~~~\nQuery is:",query,"\n~~~~~~~~~~~~~~~~~~\n\n")
+
+    print("Waiting a bit...")
+    engine._delay = random.uniform(10, 20)
+    engine._http_client = http_client.HttpClient() # Fresh session clears cookies
+    engine.set_headers({'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"})
+
+    results = engine.search(search_query, pages=1)
+
+    return {
+        "items": results[:num_results]
+    }
 
 """
     Test a specific query
@@ -91,5 +131,6 @@ QUERY = "International Space Station reflection in helmet visor images"
 QUERY_ID = "12testID34"
 IMAGE_SEARCH = False
 NUM_RESULTS = 5 # MAX 10
-search_and_scrap_results("./web_search",QUERY,QUERY_ID,IMAGE_SEARCH,NUM_RESULTS)
+
+search_and_scrap_results("./web_search",QUERY,QUERY_ID,NUM_RESULTS, IMAGE_SEARCH)
 """

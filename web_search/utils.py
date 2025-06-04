@@ -39,7 +39,7 @@ def extract_and_fix_image_urls(xml_response, base_url):
 
 def fetch_dynamic_html(url):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False) # --> Set false for debugging
+        browser = p.chromium.launch(headless=True) # --> Set false for debugging
         context = browser.new_context(
             user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
             extra_http_headers={
@@ -61,7 +61,7 @@ def fetch_dynamic_html(url):
         cookie_texts = [
        "Accept", "Continue", "Agree", "OK", "I agree", "AGREE", "Consent",
        "Allow all", "Allow all cookies", "Accept all", "Accept all cookies",
-       "Accept All", "Agree & continue", "Accept cookies"]   
+       "Accept All", "Accept all" "Agree & continue", "Accept cookies"]   
         
         # Build a combined selector
         selector = ", ".join([f"button:has-text('{text}')" for text in cookie_texts])

@@ -1,0 +1,26 @@
+{
+  "post_text": "Tech is so WILD!!  \n\nCES 2024 will make you question EVERYTHING  \n\n(Here are some Wild Tech) https://t.co/1Hqf8KxUFd",
+  "image_url": "media_miscaptioned_class/photo_452_0.jpg",
+  "structured_response": {
+    "image_description": "The image shows a small, portable device labeled \"PocketCHIP\" placed on a tray. The device has a screen displaying various icons such as \"Terminal,\" \"Play PICO-8,\" \"Make Music,\" \"Write,\" and \"Browse Files.\" Below the screen is a keyboard with circular keys. There are also a few cables with pink connectors and a small electronic board labeled \"TCA\" on the right side of the tray.",
+    "ocr_text": "The text on the device's screen is clearly visible: \"PocketCHIP,\" \"Terminal,\" \"Play PICO-8,\" \"Make Music,\" \"Write,\" \"Browse Files,\" \"Get Help.\"",
+    "manipulation_signs": "No obvious signs of manipulation are detected. The image appears to be a real photograph with no distortions, unnatural shadows, or inconsistencies in lighting.",
+    "named_entities": [
+      "PocketCHIP",
+      "TCA",
+      "CES 2024 (implied)",
+      "PICO-8"
+    ],
+    "five_ws": {
+      "who": "The user who posted the image",
+      "what": "Displaying the PocketCHIP device and its features",
+      "where": "Likely at a tech event or workspace, suggested by the presence of the PocketCHIP and the laptop in the background",
+      "when": "The post is dated December 07, 2024, implying the event or context is recent",
+      "why": "To showcase the PocketCHIP and its capabilities"
+    },
+    "image_text_alignment": "The image visually matches the claim made in the post text, as it shows the PocketCHIP device and its features, which are mentioned in the text.",
+    "emotive_or_fallacious_language": "The text uses emotionally charged language (\"Tech is so WILD!!\") but does not contain any logical fallacies.",
+    "timestamp_consistency": "The post is dated December 07, 2024, and the image appears to be a recent photograph, consistent with the date."
+  },
+  "raw_response": "- **Image Description**: The image shows a small, portable device labeled \"PocketCHIP\" placed on a tray. The device has a screen displaying various icons such as \"Terminal,\" \"Play PICO-8,\" \"Make Music,\" \"Write,\" and \"Browse Files.\" Below the screen is a keyboard with circular keys. There are also a few cables with pink connectors and a small electronic board labeled \"TCA\" on the right side of the tray.\n- **OCR**: The text on the device's screen is clearly visible: \"PocketCHIP,\" \"Terminal,\" \"Play PICO-8,\" \"Make Music,\" \"Write,\" \"Browse Files,\" \"Get Help.\"\n- **Manipulation Signs**: No obvious signs of manipulation are detected. The image appears to be a real photograph with no distortions, unnatural shadows, or inconsistencies in lighting.\n- **Named Entities**: PocketCHIP, TCA, CES 2024 (implied), PICO-8.\n- **5Ws Extraction**:\n  - **Who is involved?**: The user who posted the image.\n  - **What is happening?**: Displaying the PocketCHIP device and its features.\n  - **Where is this taking place?**: Likely at a tech event or workspace, suggested by the presence of the PocketCHIP and the laptop in the background.\n  - **When is it happening (explicit or implied)?**: The post is dated December 07, 2024, implying the event or context is recent.\n  - **Why is this happening (if stated)?**: To showcase the PocketCHIP and its capabilities.\n- **Image-Text Alignment**: The image visually matches the claim made in the post text, as it shows the PocketCHIP device and its features, which are mentioned in the text.\n- **Emotive Language or Logical Fallacies**: The text uses emotionally charged language (\"Tech is so WILD!!\") but does not contain any logical fallacies.\n- **Timestamp Consistency Check**: The post is dated December 07, 2024, and the image appears to be a recent photograph, consistent with the date."
+}

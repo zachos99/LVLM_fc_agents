@@ -36,7 +36,7 @@ from web_search.google_search import run_searches_from_query_file
 """
 
 
-ENTRY_ID = 'ma3729'
+ENTRY_ID = 'mi0431'
 
 POST_PROCESSING_PLATFORM = 'openrouter'
 POST_PROCESSING_MODEL = 'qwen/qwen-2.5-vl-7b-instruct:free'
@@ -45,7 +45,7 @@ QUERY_GENERATOR_PLATFORM = 'togetherai'
 QUERY_GENERATOR_MODEL = 'meta-llama/Llama-3.3-70B-Instruct-Turbo-Free'
 
 NUM_QUERIES = 2 # How many queries to generate for normal search
-RESULTS_PER_QUERY = 2
+RESULTS_PER_QUERY = 3
 
 """
     Optionally, we can set and experiment with the max_tokens and temperature varibles
@@ -59,9 +59,8 @@ RESULTS_PER_QUERY = 2
                 0.2-0.4 --> precise and focused (good for fact-checking, extraction)
                 0.7-1.0 --> more creative, diverse (idea generation, writing)
                 For fact-checking / structured queries --> use 0.2-0.4.
-
-
 """
+
 MAX_TOKENS = 512
 TEMPERATURE = 0.2
 
@@ -73,13 +72,13 @@ print('\nAnalyzing entry:', ENTRY_ID)
 
 print(f"\n\nGenerating {NUM_QUERIES} queries...\n")
 
-queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
+#queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
 
 
 print("\n\nSearching the web...")
 # Also saving search results somewhere?
 
-#run_searches_from_query_file(entry_id=ENTRY_ID,is_image_search=False, num_results = RESULTS_PER_QUERY)
+run_searches_from_query_file(entry_id=ENTRY_ID, num_results = RESULTS_PER_QUERY)
 
 
 

@@ -68,14 +68,14 @@ def postPreprocessingAgent(entryID,platform,model):
     user_prompt = build_user_prompt(tweet_timestamp,tweet_text)
 
 
-    print(f"\nAsking {model}...\n")
+    print(f"\nAsking {model}...")
 
 
     if(platform=='openrouter'):
-        print("\nUsing OpenRouter API...\n")
+        print("Using OpenRouter API...")
         response = mm_inference_openrouter(system_prompt,user_prompt,model, image_url)
     elif(platform=='togetherai'):
-        print("\nUsing TogetherAI API...\n")
+        print("Using TogetherAI API...")
         response = mm_inference_togetherai(system_prompt,user_prompt,model, image_url)
     else:
         print('Please enter a valid AI platform!')

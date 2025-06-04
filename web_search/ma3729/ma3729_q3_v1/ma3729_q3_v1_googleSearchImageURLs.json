@@ -1,10 +1,16 @@
 [
   {
     "title": "Free Astronaut Space Reflection Image | Download at StockCake",
-    "source_url": "https://stockcake.com/i/astronaut-space-reflection_973771_722686",
     "type": "image_url",
     "image_url": {
       "url": "https://images.stockcake.com/public/e/1/a/e1ad5350-8bbf-4505-b561-f5df240bdcdb_large/astronaut-space-reflection-stockcake.jpg"
+    }
+  },
+  {
+    "title": "Astronaut during a spacewalk with Planet Earth Stock Photo - Alamy",
+    "type": "image_url",
+    "image_url": {
+      "url": "https://c8.alamy.com/comp/DP9HC1/astronaut-during-a-spacewalk-with-planet-earth-DP9HC1.jpg"
     }
   }
 ]

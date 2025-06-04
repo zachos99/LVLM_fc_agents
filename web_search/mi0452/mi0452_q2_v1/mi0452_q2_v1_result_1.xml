@@ -1,0 +1,33 @@
+<doc sitename="The Verge" title="PocketChip review: why do I want this?" author="Paul Miller" date="2016-07-19" url="https://www.theverge.com/circuitbreaker/2016/7/19/12227806/pocketchip-review-portable-linux-computer" hostname="theverge.com" description="The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking news to reviews to award-winning features and investigations, on our site, in video, and in podcasts." categories="Circuit Breaker" tags="theverge,pagetype:story,circuitbreaker,gadgets,linux,reviews,tech" fingerprint="782a81953aab13d">
+  <main>
+    <p>I’ve had a PocketChip in my possession for over a month, and I still don’t know what I say about it. I can’t really recommend anyone buy this thing, and yet I wish everyone owned one. Does that make any sense? It’s not “practical” in the sense that it’s not “practical” for an English major to take advanced mathematics courses, except for the fact that non-practical people like that are some of my favorite people.</p>
+    <head rend="h1">PocketChip review: why do I want this?</head>
+    <p>PocketChip is like a just-for-fun weekend software project that ends up on GitHub but is clearly marked as “not for production use.” Except it’s an embodied physical artifact you can buy for $49.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813345/akrales_160719_1147_A_0039.jpg"/>
+    <p>Here are the facts: PocketChip is a portable, battery-powered Linux computer with a 480 x 272 resistive touchscreen and a QWERTY keyboard. It’s about as powerful as a Raspberry Pi, but it comes with a custom touch-friendly version of Linux that eschews a traditional desktop UI. It’s bigger than a really big phone, and thicker than a laptop, and I can barely cram it into my back pocket.</p>
+    <p>Software-wise, the top level user interface is too simple and lacking in features to feel like a computer, and the command line that’s always one click away is as absurdly powerful as the Linux command line has always been, and just as dense.</p>
+    <p>Like, when I first set it up, I realized there’s no visible option to add a hidden Wi-Fi network. No problem! Just drop down to the command line, type in a scary sequence of characters you found on a forum somewhere, and blammo you’re on the Wi-Fi.</p>
+    <p>That’s not actually what happened, though. In truth, I tried a few commands, thought I’d messed up the whole system (I hadn’t), and tried to flash the firmware back to factory new using a weird Chrome extension that Chip provides for this purpose. Turns out, this doesn’t work over USB 3.0, so I broke my PocketChip and had to buy a USB 2.0 hub to finally fix it again.</p>
+    <p>Does that sound fun to you? I’ll admit it was extremely frustrating in the moment, but at the end of the day I’m kind of proud of myself for breaking this thing and then fixing it. This wasn’t “jailbreaking,” I wasn’t going against the wishes of the manufacturer. PocketChip is my computer to do with what I please, and it really feels like that.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813339/akrales_160719_1147_A_0139.jpg"/>
+    <p>The other standout feature of PocketChip is Pico-8. Pico-8 is a “fantasy console” which runs beautifully on PocketChip and provides endless hours of potential entertainment. And then there’s the best part of Pico-8: you can code your own games, and modify the code of other games you download. It’s like a weird alternate history where Commodore and Texas Instruments rule the video game industry 20 years ago instead of Nintendo. A huge portion of professional programmers got their start by tinkering with games, and PocketChip makes that experience front and center with Pico-8.</p>
+    <p>Except for the fact that it kind of sucks to use PocketChip to code or play Pico-8 games. The clicky QWERTY keys are pretty to look at, but they’re terrible for typing. It takes way too much pressure to click, and I’m still not good at using the function key and non-standard layout for special characters — a must for coding. It’s almost painful to try and play an action game, and for coding I much prefer to plug in a USB keyboard.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813335/akrales_160719_1147_A_0221.jpg"/>
+    <p>And then once you have a keyboard plugged in, there’s the problem of tapping on the screen. Pico-8’s interface was designed for a mouse, and you basically need a stylus to use it well. I originally had dreams of coding games on the Pico-8 during my subway commute, but frankly I’d be more comfortable using a laptop on the train.</p>
+    <p>But isn’t it kind of cool PocketChip has a full-sized USB plug to begin with? Oh, and it has GPIO pin breakouts across the top in case I want to do simple electronics projects. And if I really wanted to I could just take the whole thing apart. And it just looks so dang cool. And it runs real Linux, did I mention that?</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813331/akrales_160719_1147_A_0158.jpg"/>
+    <p>And yet, outside of a couple demos I’ve done for Facebook Live, I hardly ever use PocketChip out of choice or convenience. Pico-8 runs just fine on my computer, and my phone is a million times more useful and entertaining on the go. For instance, PocketChip doesn’t even really have a built-in web browser. You can of course install one of the myriad available for Linux, but they’re all basically broken on the small screen, non-standard Linux distro, and weak hardware.</p>
+    <p>But what did I expect? There are no “upstarts” smaller than Microsoft in the mobile space. There’s a wide divide between Maker Faires and the glossy shelves of the Apple Store. Will there ever be a truly open and “free” mobile computer that’s not horribly lacking, or entirely disappointing?</p>
+    <p>Despite all its failings, it feels like PocketChip is a tiny glimmer of hope.</p>
+    <p>Photography by Amelia Krales.</p>
+    <head rend="h2">Most Popular</head>
+    <list rend="ol">
+      <item>T-Mobile launches fiber internet service in the US with a five-year price lock</item>
+      <item>iFixit is retroactively giving the Nintendo Switch a 4/10 on repairability</item>
+      <item>Tim Sweeney didn’t expect a five-year Fortnite ban</item>
+      <item>Apple’s 2024 M4 MacBook Pro with a 1TB SSD has never been this cheap</item>
+      <item>Amazon has leaked Philips’ new ambient wall light</item>
+    </list>
+  </main>
+  <comments/>
+</doc>

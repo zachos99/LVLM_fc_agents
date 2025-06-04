@@ -1,0 +1,36 @@
+{
+  "post_text": "imagine telling this guy in 1988: if you stick with it, the company will go from $1B to $120B, and you'll go from intern to CEO https://t.co/qMcMh8sVyb",
+  "image_url": "media_factually_correct_class/photo_790_0.jpg",
+  "structured_response": {
+    "image_description": "The image is a LinkedIn profile snippet of a person's career history at Nike. It lists various positions and roles held by the individual, starting from intern in Apparel Sales Representative in 1988 to the current position of Incoming President and Chief Executive Officer as of September 2024. The timeline spans from 1988 to the present, indicating a long-standing career at Nike.",
+    "ocr_text": "The text extracted from the image includes:\n  - Incoming President and Chief Executive Officer\n  - Nike - Full-time\n  - Sep 2024 - Present · 1 mo\n  - Portland, Oregon, United States · On-site\n  - Nike\n  - 14 yrs 1 mo\n  - President, Consumer & Marketplace\n  - 2018 - 2020 · 2 yrs\n  - President, Geographies & Integrated Marketplace\n  - 2016 - 2018 · 2 yrs\n  - President, Geographies & Sales\n  - 2013 - 2016 · 3 yrs\n  - Vice President and General Manager, North America\n  - 2010 - 2013 · 3 yrs\n  - Vice President, Global Retail\n  - 2006 - 2010 · 4 yrs\n  - Nike\n  - 17 yrs 1 mo\n  - Vice President, USA Commerce\n  - 2004 - 2005 · 1 yr\n  - Vice President and General Manager, USA Retail\n  - 2003 - 2004 · 1 yr\n  - Vice President, EMEA Sales and Retail\n  - 2000 - 2003 · 3 yrs\n  - Director, Team Sports Division\n  - 1998 - 2000 · 2 yrs\n  - Sales Management\n  - 1996 - 1998 · 2 yrs\n  - Sales Representative\n  - 1994 - 1996 · 2 yrs\n  - Team Sales\n  - 1991 - 1994 · 3 yrs\n  - Sales, Sports Graphics\n  - 1990 - 1991 · 1 yr\n  - Intern, Apparel Sales Representative\n  - 1988 - 1990 · 2 yrs",
+    "manipulation_signs": "No obvious signs of manipulation. The image appears to be a standard LinkedIn profile snippet, which is consistent with the timeline and positions listed.",
+    "named_entities": [
+      "- Nike\n  - Incoming President and Chief Executive Officer\n  - Portland",
+      "Oregon",
+      "United States\n  - Intern",
+      "Apparel Sales Representative (1988 - 1990)\n  - Vice President",
+      "Global Retail (2006 - 2010)\n  - Vice President",
+      "USA Commerce (2004 - 2005)\n  - Vice President and General Manager",
+      "USA Retail (2003 - 2004)\n  - Vice President",
+      "EMEA Sales and Retail (2000 - 2003)\n  - Director",
+      "Team Sports Division (1998 - 2000)\n  - Sales Management (1996 - 1998)\n  - Sales Representative (1994 - 1996)\n  - Team Sales (1991 - 1994)\n  - Sales",
+      "Sports Graphics (1990 - 1991)\n  - President",
+      "Consumer & Marketplace (2018 - 2020)\n  - President",
+      "Geographies & Integrated Marketplace (2016 - 2018)\n  - President",
+      "Geographies & Sales (2013 - 2016)\n  - Vice President and General Manager",
+      "North America (2010 - 2013)"
+    ],
+    "five_ws": {
+      "who": "A person with a long-standing career at Nike",
+      "what": "The individual has progressed from an intern to the Incoming President and CEO of Nike",
+      "where": "Portland, Oregon, United States",
+      "when": "The timeline spans from 1988 to September 2024",
+      "why": "The post implies a significant career progression and growth in Nike's valuation"
+    },
+    "image_text_alignment": "The image aligns with the claim made in the post text. It shows a career progression from intern to CEO, which supports the narrative of significant growth",
+    "emotive_or_fallacious_language": "",
+    "timestamp_consistency": ""
+  },
+  "raw_response": "- **Image Description**: The image is a LinkedIn profile snippet of a person's career history at Nike. It lists various positions and roles held by the individual, starting from intern in Apparel Sales Representative in 1988 to the current position of Incoming President and Chief Executive Officer as of September 2024. The timeline spans from 1988 to the present, indicating a long-standing career at Nike.\n  \n- **OCR**: The text extracted from the image includes:\n  - Incoming President and Chief Executive Officer\n  - Nike - Full-time\n  - Sep 2024 - Present · 1 mo\n  - Portland, Oregon, United States · On-site\n  - Nike\n  - 14 yrs 1 mo\n  - President, Consumer & Marketplace\n  - 2018 - 2020 · 2 yrs\n  - President, Geographies & Integrated Marketplace\n  - 2016 - 2018 · 2 yrs\n  - President, Geographies & Sales\n  - 2013 - 2016 · 3 yrs\n  - Vice President and General Manager, North America\n  - 2010 - 2013 · 3 yrs\n  - Vice President, Global Retail\n  - 2006 - 2010 · 4 yrs\n  - Nike\n  - 17 yrs 1 mo\n  - Vice President, USA Commerce\n  - 2004 - 2005 · 1 yr\n  - Vice President and General Manager, USA Retail\n  - 2003 - 2004 · 1 yr\n  - Vice President, EMEA Sales and Retail\n  - 2000 - 2003 · 3 yrs\n  - Director, Team Sports Division\n  - 1998 - 2000 · 2 yrs\n  - Sales Management\n  - 1996 - 1998 · 2 yrs\n  - Sales Representative\n  - 1994 - 1996 · 2 yrs\n  - Team Sales\n  - 1991 - 1994 · 3 yrs\n  - Sales, Sports Graphics\n  - 1990 - 1991 · 1 yr\n  - Intern, Apparel Sales Representative\n  - 1988 - 1990 · 2 yrs\n  \n- **Manipulation Signs**: No obvious signs of manipulation. The image appears to be a standard LinkedIn profile snippet, which is consistent with the timeline and positions listed.\n\n- **Named Entities**: \n  - Nike\n  - Incoming President and Chief Executive Officer\n  - Portland, Oregon, United States\n  - Intern, Apparel Sales Representative (1988 - 1990)\n  - Vice President, Global Retail (2006 - 2010)\n  - Vice President, USA Commerce (2004 - 2005)\n  - Vice President and General Manager, USA Retail (2003 - 2004)\n  - Vice President, EMEA Sales and Retail (2000 - 2003)\n  - Director, Team Sports Division (1998 - 2000)\n  - Sales Management (1996 - 1998)\n  - Sales Representative (1994 - 1996)\n  - Team Sales (1991 - 1994)\n  - Sales, Sports Graphics (1990 - 1991)\n  - President, Consumer & Marketplace (2018 - 2020)\n  - President, Geographies & Integrated Marketplace (2016 - 2018)\n  - President, Geographies & Sales (2013 - 2016)\n  - Vice President and General Manager, North America (2010 - 2013)\n\n- **5Ws Extraction**:\n  - **Who is involved?**: A person with a long-standing career at Nike.\n  - **What is happening?**: The individual has progressed from an intern to the Incoming President and CEO of Nike.\n  - **Where is this taking place?**: Portland, Oregon, United States.\n  - **When is it happening (explicit or implied)?**: The timeline spans from 1988 to September 2024.\n  - **Why is this happening (if stated)?**: The post implies a significant career progression and growth in Nike's valuation.\n\n- **Image-Text Alignment**: The image aligns with the claim made in the post text. It shows a career progression from intern to CEO, which supports the narrative of significant growth"
+}

@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "PocketCHIP device features CES 2024",
+      "search_type": "text"
+    },
+    {
+      "query": "PICO-8 on PocketCHIP reviews and demos",
+      "search_type": "text"
+    },
+    {
+      "query": "PocketCHIP device photo with TCA board",
+      "search_type": "image"
+    }
+  ]
+}
