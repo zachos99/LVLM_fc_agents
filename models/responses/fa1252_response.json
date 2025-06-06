@@ -1,0 +1,33 @@
+{
+  "post_text": "Is this what you were looking for? https://t.co/z9VnuwU6JC",
+  "image_url": "media_factually_correct_class/photo_1252_0.jpg",
+  "structured_response": {
+    "image_description": "The image is a table titled \"Quarterback Statistics\" that lists quarterback players, their teams, the number of plays, and various performance metrics such as EPA+CPOE composite, adjusted EPA/play, and EPA/play. The data spans from the 2021-2024 seasons, excluding playoffs, with a minimum of 100 plays, and considering all downs and quarters.",
+    "ocr_text": "The text in the image is as follows:\n  ```\n  Quarterback Statistics\n  2021-2024, win prob 0-100%, reg. weeks none\n  (playoffs: DIV-SB), min 100 plays, downs: 1-4, qtrs: all\n  Copy CSV Excel PDF\n  Player Team Plays EPA+CPOE composite Adj. EPA/play EPA/play\n  1 J.Hurts 🦅 246 0.189 0.290 0.274\n  2 P.Mahomes 🦁 473 0.165 0.228 0.212\n  3 L.Jackson 🦫 117 0.149 0.230 0.191\n  4 M.Stafford 🦢 192 0.144 0.222 0.215\n  5 J.Allen 🦄 235 0.141 0.213 0.213\n  ```",
+    "manipulation_signs": "No obvious signs of manipulation. The image appears to be a screenshot of a table, likely from a sports analytics website, and the data is presented in a clear and structured manner.",
+    "named_entities": [
+      "The named entities in the image include quarterback players' initials and last names (J.Hurts",
+      "P.Mahomes",
+      "L.Jackson",
+      "M.Stafford",
+      "J.Allen)",
+      "team logos (🦅",
+      "🦁",
+      "🦫",
+      "🦢",
+      "🦄)",
+      "and seasons (2021-2024)"
+    ],
+    "five_ws": {
+      "who": "The quarterbacks listed in the table",
+      "what": "Displaying quarterback performance statistics",
+      "where": "Unclear, as the image does not specify a location",
+      "when": "The data is from the 2021-2024 seasons, excluding playoffs",
+      "why": "To provide a comparison of quarterback performances"
+    },
+    "image_text_alignment": "The image visually matches the claim made in the post text. The table in the image corresponds to the description in the text.",
+    "emotive_or_fallacious_language": "The text does not contain emotionally charged language or logical fallacies.",
+    "timestamp_consistency": "The post was created on March 25, 2025, and the data in the image is from the 2021-2024 seasons. This is consistent, as the image does not imply a recent or real-time event."
+  },
+  "raw_response": "- **Image Description**: The image is a table titled \"Quarterback Statistics\" that lists quarterback players, their teams, the number of plays, and various performance metrics such as EPA+CPOE composite, adjusted EPA/play, and EPA/play. The data spans from the 2021-2024 seasons, excluding playoffs, with a minimum of 100 plays, and considering all downs and quarters.\n- **OCR**: The text in the image is as follows:\n  ```\n  Quarterback Statistics\n  2021-2024, win prob 0-100%, reg. weeks none\n  (playoffs: DIV-SB), min 100 plays, downs: 1-4, qtrs: all\n  Copy CSV Excel PDF\n  Player Team Plays EPA+CPOE composite Adj. EPA/play EPA/play\n  1 J.Hurts 🦅 246 0.189 0.290 0.274\n  2 P.Mahomes 🦁 473 0.165 0.228 0.212\n  3 L.Jackson 🦫 117 0.149 0.230 0.191\n  4 M.Stafford 🦢 192 0.144 0.222 0.215\n  5 J.Allen 🦄 235 0.141 0.213 0.213\n  ```\n- **Manipulation Signs**: No obvious signs of manipulation. The image appears to be a screenshot of a table, likely from a sports analytics website, and the data is presented in a clear and structured manner.\n- **Named Entities**: The named entities in the image include quarterback players' initials and last names (J.Hurts, P.Mahomes, L.Jackson, M.Stafford, J.Allen), team logos (🦅, 🦁, 🦫, 🦢, 🦄), and seasons (2021-2024).\n- **5Ws Extraction**:\n  - **Who is involved?**: The quarterbacks listed in the table.\n  - **What is happening?**: Displaying quarterback performance statistics.\n  - **Where is this taking place?**: Unclear, as the image does not specify a location.\n  - **When is it happening (explicit or implied)?**: The data is from the 2021-2024 seasons, excluding playoffs.\n  - **Why is this happening (if stated)?**: To provide a comparison of quarterback performances.\n- **Image-Text Alignment**: The image visually matches the claim made in the post text. The table in the image corresponds to the description in the text.\n- **Emotive Language or Logical Fallacies**: The text does not contain emotionally charged language or logical fallacies.\n- **Timestamp Consistency Check**: The post was created on March 25, 2025, and the data in the image is from the 2021-2024 seasons. This is consistent, as the image does not imply a recent or real-time event."
+}

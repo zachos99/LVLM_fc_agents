@@ -1,0 +1,26 @@
+{
+  "post_text": "Is this true?! \nThe Boys star Karen Fukuhara auditioned for the role of Atsu in Ghost Of Yotei and was refused?! Probably because she isn't DEI enough...? https://t.co/JNutsVeS0q",
+  "image_url": "media_miscaptioned_class/photo_2772_0.jpg",
+  "structured_response": {
+    "image_description": "The image is a split-screen showing two different individuals. On the left, there is a close-up of Karen Fukuhara, a smiling woman with dark hair styled in a side-swept fringe, wearing a light-colored outfit. On the right, there is a person wearing a traditional Japanese-style hat and fur-lined clothing, suggesting a historical or fantasy costume.",
+    "ocr_text": "The text overlaid on the image reads: \"The Boys\" star Karen Fukuhara auditioned for the role of Atsu in Ghost of Yōtei, but she was declined the role due to \"Limited acting experience\".",
+    "manipulation_signs": "The image appears realistic and free of obvious manipulation. The lighting and shadows on both faces are consistent, and there are no signs of distortion or unnatural elements.",
+    "named_entities": [
+      "Karen Fukuhara",
+      "The Boys",
+      "Ghost of Yōtei",
+      "Atsu"
+    ],
+    "five_ws": {
+      "who": "Karen Fukuhara, the role of Atsu in Ghost of Yōtei",
+      "what": "Karen Fukuhara auditioned for the role of Atsu but was declined due to \"Limited acting experience\"",
+      "where": "Not specified in the image or text",
+      "when": "The text mentions Karen Fukuhara auditioned, implying a past event, but does not specify a date",
+      "why": "Limited acting experience"
+    },
+    "image_text_alignment": "The image visually depicts Karen Fukuhara and a character in a historical costume, which aligns with the text mentioning her audition for a role in Ghost of Yōtei.",
+    "emotive_or_fallacious_language": "The text does not contain emotionally charged language or logical fallacies. It states a factual claim about Karen Fukuhara's audition experience.",
+    "timestamp_consistency": "The text mentions Karen Fukuhara auditioned, implying a past event. The image does not provide a specific date but is consistent with the historical context of the role."
+  },
+  "raw_response": "- **Image Description**: The image is a split-screen showing two different individuals. On the left, there is a close-up of Karen Fukuhara, a smiling woman with dark hair styled in a side-swept fringe, wearing a light-colored outfit. On the right, there is a person wearing a traditional Japanese-style hat and fur-lined clothing, suggesting a historical or fantasy costume.\n  \n- **OCR**: The text overlaid on the image reads: \"The Boys\" star Karen Fukuhara auditioned for the role of Atsu in Ghost of Yōtei, but she was declined the role due to \"Limited acting experience\".\n\n- **Manipulation Signs**: The image appears realistic and free of obvious manipulation. The lighting and shadows on both faces are consistent, and there are no signs of distortion or unnatural elements.\n\n- **Named Entities**: Karen Fukuhara, The Boys, Ghost of Yōtei, Atsu\n\n- **5Ws Extraction**:\n  - **Who is involved?**: Karen Fukuhara, the role of Atsu in Ghost of Yōtei\n  - **What is happening?**: Karen Fukuhara auditioned for the role of Atsu but was declined due to \"Limited acting experience\"\n  - **Where is this taking place?**: Not specified in the image or text\n  - **When is it happening (explicit or implied)?**: The text mentions Karen Fukuhara auditioned, implying a past event, but does not specify a date.\n  - **Why is this happening (if stated)?**: Limited acting experience\n\n- **Image-Text Alignment**: The image visually depicts Karen Fukuhara and a character in a historical costume, which aligns with the text mentioning her audition for a role in Ghost of Yōtei.\n\n- **Emotive Language or Logical Fallacies**: The text does not contain emotionally charged language or logical fallacies. It states a factual claim about Karen Fukuhara's audition experience.\n\n- **Timestamp Consistency Check**: The text mentions Karen Fukuhara auditioned, implying a past event. The image does not provide a specific date but is consistent with the historical context of the role."
+}

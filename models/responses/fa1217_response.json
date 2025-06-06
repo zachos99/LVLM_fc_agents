@@ -1,0 +1,26 @@
+{
+  "post_text": "5. The last photo of a Barbary Lion, taken in 1924. The last recorded Barbary lion was shot in Morocco in 1942. https://t.co/xO1rHIOU3M",
+  "image_url": "media_factually_correct_class/photo_1217_0.jpg",
+  "structured_response": {
+    "image_description": "The image is a black-and-white photograph showing a lion in a rocky, barren landscape. The top part of the image depicts a lion walking away in the distance, while the bottom part shows a lion lying down on a rocky outcrop, appearing relaxed. The landscape is arid, with sparse vegetation.",
+    "ocr_text": "",
+    "manipulation_signs": "The image appears to be a real photograph, as there are no signs of distortion, unnatural shadows, inconsistent lighting, or blurry objects. The details in the lion's fur and the rocky terrain are consistent with historical photographs.",
+    "named_entities": [
+      "Barbary Lion",
+      "Morocco",
+      "1924",
+      "1942"
+    ],
+    "five_ws": {
+      "who": "The Barbary Lion",
+      "what": "The lion is shown in its natural habitat, with one walking away and the other resting",
+      "where": "Morocco",
+      "when": "The images are dated 1924 and 1942",
+      "why": "The post text mentions these are the last photos and recordings of the Barbary Lion, implying historical significance"
+    },
+    "image_text_alignment": "The image visually depicts lions in a natural habitat, which aligns with the claim in the text that these are the last photos of a Barbary Lion.",
+    "emotive_or_fallacious_language": "The text does not contain emotionally charged language or logical fallacies.",
+    "timestamp_consistency": "The post text mentions dates from the past (1924 and 1942), and the image appears consistent with these historical references."
+  },
+  "raw_response": "- **Image Description**: The image is a black-and-white photograph showing a lion in a rocky, barren landscape. The top part of the image depicts a lion walking away in the distance, while the bottom part shows a lion lying down on a rocky outcrop, appearing relaxed. The landscape is arid, with sparse vegetation.\n  \n- **OCR**: No visible text.\n\n- **Manipulation Signs**: The image appears to be a real photograph, as there are no signs of distortion, unnatural shadows, inconsistent lighting, or blurry objects. The details in the lion's fur and the rocky terrain are consistent with historical photographs.\n\n- **Named Entities**: Barbary Lion, Morocco, 1924, 1942\n\n- **5Ws Extraction**:\n  - **Who is involved?**: The Barbary Lion.\n  - **What is happening?**: The lion is shown in its natural habitat, with one walking away and the other resting.\n  - **Where is this taking place?**: Morocco.\n  - **When is it happening (explicit or implied)?**: The images are dated 1924 and 1942.\n  - **Why is this happening (if stated)?**: The post text mentions these are the last photos and recordings of the Barbary Lion, implying historical significance.\n\n- **Image-Text Alignment**: The image visually depicts lions in a natural habitat, which aligns with the claim in the text that these are the last photos of a Barbary Lion.\n\n- **Emotive Language or Logical Fallacies**: The text does not contain emotionally charged language or logical fallacies.\n\n- **Timestamp Consistency Check**: The post text mentions dates from the past (1924 and 1942), and the image appears consistent with these historical references."
+}

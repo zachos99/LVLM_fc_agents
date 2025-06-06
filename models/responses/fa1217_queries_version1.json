@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "Barbary Lion last recorded sighting Morocco 1942",
+      "search_type": "text"
+    },
+    {
+      "query": "Barbary Lion extinction date and location",
+      "search_type": "text"
+    },
+    {
+      "query": "Barbary Lion in rocky barren landscape photo",
+      "search_type": "image"
+    }
+  ]
+}

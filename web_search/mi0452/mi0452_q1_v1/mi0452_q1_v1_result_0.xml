@@ -1,11 +1,689 @@
-<doc sitename="Hackaday" title="C.H.I.P. Pro – Hackaday" author="Jenny List" date="2018-07-20" url="https://hackaday.com/tag/c-h-i-p-pro/" hostname="hackaday.com" categories="hardware;News;Microcontrollers;Hackaday Columns;Slider" tags="C.H.I.P.;C.H.I.P. Pro;Next Thing Co.;CES2017;chip;CHIP Pro;GR8;New Part Day;NextThingCo" fingerprint="254d5180b5a154fc">
+<doc title="Welcome to PocketC.H.I.P." date="2016-01-01" fingerprint="bc66d81b41ab37b8">
   <main>
-    <p>Remember the C.H.I.P? The little ARM-based and Linux-capable single board computer that was launched in 2015 at what was then a seemingly impossibly cheap price of $9, then took ages to arrive before fading away and the company behind it going under? Like a zombie, it has returned from the dead!</p>
-    <p>So, should we be reaching for the staples of zombie movies, and breaking out the long-playing records? Or should we be cautiously welcoming it back into the fold, a prodigal son to the wider family of boards? Before continuing, it’s best to take a closer look.</p>
-    <p>The C.H.I.P that has returned is a C.H.I.P Pro, the slightly more powerful upgraded model, and it has done so because unlike its sibling it was released under an open-source licence. Therefore this is a clone of the original, and it comes from an outfit called Source Parts, who have put their board up for sale via Amazon, but with what looks suspiciously like a photo of an original Next Thing Co board. We can’t raise Source Parts’ website as this is being written so we can’t tell you much about its originator and whether this is likely to be a reliable supplier that can provide continuity, so maybe we’d suggest a little caution until more information has emerged. We’re sure that community members will share their experiences.</p>
-    <p>It’s encouraging to see the C.H.I.P Pro return, but on balance we’d say that its price is not the most attractive given that the same money can buy you powerful boards that come with much better support. The SBC market has moved on since the original was a thing, and to make a splash this one will have to have some special sauce that we’re just not seeing. If they cloned the Pocket C.H.I.P all-in-one computer with keyboard and display, now that would catch our attention!</p>
-    <p>It all seemed so rosy for the C.H.I.P at launch, but even then its competitors doubted the $9 BoM, and boards such as the Raspberry Pi Zero took its market. The end came in March this year, but perhaps there might be more life in it yet.</p>
-    <p>Thanks [SlowBro] for the tip.</p>
+    <head rend="h1">Welcome to PocketC.H.I.P.</head>
+    <p>
+      <graphic src="/images/front-and-back.png" alt="PocketC.H.I.P. Front"/>
+    </p>
+    <p>Hey! Thanks for checking out PocketC.H.I.P.!</p>
+    <p>PocketC.H.I.P. is a game console, a portable synthesizer, and a Linux field terminal. With a bit of effort, it can become a whole lot more – see PockulusC.H.I.P., PocketC.H.I.P. as a VR headset here.</p>
+    <p>The point is, PocketC.H.I.P. can be what you want it to be and we’re excited to see what you will do with your PocketC.H.I.P…</p>
+    <p>These are the Docs, which are intended to help you get started with PocketC.H.I.P… The Docs will introduce you to the software that comes pre-installed on PocketC.H.I.P., explain how to use the system, and hopefully plant some ideas about how you can do even more with your PocketC.H.I.P…</p>
+    <p>The Docs will not teach you how to code (though it will give tips), how to program a game (though it will explain the tools), how to make music (though it will describe options), or how to build onto PocketC.H.I.P. (though it be encouraged).</p>
+    <p>Have fun!</p>
+    <head rend="h1">Quick Start</head>
+    <p>This section explains how to turn on PocketC.H.I.P., setup WiFi, and charge your device.</p>
+    <p>
+      <graphic src="/images/image_1.png" alt="Step 1"/>
+    </p>
+    <p>Turn on PocketC.H.I.P. by pressing down the Home/Power button located at the bottom in the middle of the keyboard for about two seconds.</p>
+    <p>PocketC.H.I.P. will take a moment to fully load, but while it does you will see the C.H.I.P. logo and then a PocketC.H.I.P. splash screen.</p>
+    <p>Once PocketC.H.I.P. is ready you will see a series of slides showing the PocketC.H.I.P. basics. Use the right arrow key or tap the right side of the screen to advance forward in the slideshow.</p>
+    <p>Once you have clicked through the basics, you will see a screen with six icons. This is the Home Screen.</p>
+    <p>
+      <graphic src="/images/home.jpg" alt="Annotated HOME screen"/>
+    </p>
+    <p>Use a finger or stylus (or really anything that’s solid and isn’t sharp) to tap on the application you want to use. Press gently enough to make contact with the screen. There’s no need to apply a lot of force. A gentle touch will do.</p>
+    <p>While using an application, press the Home/Power button to return to the Home Screen.</p>
+    <head rend="h3">WiFi Setup</head>
+    <p>
+      <graphic src="/images/no_scale/settings-icon.jpg" alt="Settings icon"/>
+    </p>
+    <p>From the Home Screen, tap the settings icon in the bottom right corner to access the Settings Screen.</p>
+    <p>Press the button to the right of the WiFi toggle switch to open a menu of all the networks in range. Scroll through the list and select your network by pressing the arrows above and below the network names. To refresh the network list, just exit the list and enter again.</p>
+    <p>When prompted, enter the network password in the text field, then touch the Connect button. It may take a few seconds to connect.</p>
+    <head rend="h3">Charging</head>
+    <p>
+      <graphic src="/images/wall-power.jpg" alt="image of PocketC.H.I.P. with cable plugged in"/>
+    </p>
+    <p>Plug in PocketC.H.I.P. to a 5-volt 1.5A power supply with a USB-micro cable to charge the 3.7V battery.</p>
+    <p>Because it is C.H.I.P.'s on-board circuitry that manages the charging of PocketC.H.I.P.'s battery, the C.H.I.P. must remain attached to PocketC.H.I.P. for battery charging.</p>
+    <p>PocketC.H.I.P. is compatible with most cell phone chargers that use a USB-micro cable.</p>
+    <head rend="h3">Troubleshooting</head>
+    <p>If PocketC.H.I.P. becomes unresponsive, hold down the Home/Power button for eight seconds. This will cut power to PocketC.H.I.P., and immediately shut it down. Only use this shutdown method if no other shutdown methods work.</p>
+    <head rend="h1">PocketC.H.I.P. at a Glance</head>
+    <p>
+      <graphic src="/images/front-and-back.png" alt="PocketC.H.I.P. front and back"/>
+    </p>
+    <head rend="h2">Touchscreen</head>
+    <p>
+      <graphic src="/images/finger-on-screen.jpg" alt="touchscreen"/>
+    </p>
+    <p>PocketC.H.I.P. features a 4.3" display made up of 480 x 272 pixels. The display is resistive touch and responds to tapping and sliding. This means you can use a finger or almost any object that isn’t sharp – you don’t want to scratch your screen.</p>
+    <p>Tap once to open apps, press buttons, and close windows.</p>
+    <p>Press and slide to scroll, adjust sliders, and resize windows.</p>
+    <head rend="h2">Keyboard</head>
+    <p>
+      <graphic src="/images/keyboard.jpg" alt="Keyboard layout"/>
+    </p>
+    <p>PocketC.H.I.P. has a full QWERTY keyboard with comfortably located arrow keys for gaming.</p>
+    <p>Each button is labeled with pink text, which identifies the default button behavior. Some buttons have two rows of pink text stacked atop each other. The bottom text is the primary behavior of the key. The top text identifies the button’s secondary behavior, which is accessible by holding down SHIFT and pressing the button.</p>
+    <p>For example: Holding SHIFT and pressing 1 types !</p>
+    <p>Some buttons are labeled to the top-left with white text on a pink background. These keys are mostly located on the right side of PocketC.H.I.P.'s keyboard and are for characters like function keys (F1, F2, … F11) and lesser used punctuation marks ({}&lt;&gt;|;). To type these specialized characters, hold the FN key and press the desired button.</p>
+    <p>
+      <graphic src="/images/function-keys.jpg" alt="Function keys"/>
+    </p>
+    <p>For example: Holding FN and pressing J types &gt;.</p>
+    <head rend="h2">Removable enclosure</head>
+    <p>
+      <graphic src="/images/exploded.jpg" alt="Exploded View"/>
+    </p>
+    <p>PocketC.H.I.P. is extremely hackable and we encourage you to modify the hardware. It is easy to take apart, since there are no screws used in the assembly.</p>
+    <p>
+      <graphic src="/images/bezel.jpg" alt="Bezel"/>
+    </p>
+    <p>If you want to fully disassemble PocketC.H.I.P., first (carefully) remove C.H.I.P. from the back of PocketC.H.I.P… Then flip PocketC.H.I.P. around and remove the frame (technically known as a bezel) around the perimeter of the screen. Remove the back case of PocketC.H.I.P. by pressing the tabs above the screen and on either side of the Home/Power button.</p>
+    <p>While the case is open, check out the “secret” prototyping area and GPIO solder pads inside the enclosure!</p>
+    <p>
+      <graphic src="/images/secret.jpg" alt="Open PocketC.H.I.P. to reveal a secret prototyping area"/>
+    </p>
+    <head rend="h2">GPIO Access</head>
+    <p>
+      <graphic src="/images/gpio.jpg" alt="GPIO"/>
+    </p>
+    <p>Along the top edge of PocketC.H.I.P. are input and output pins from C.H.I.P… These are great for attaching and controlling sensors, motors, and LEDs.</p>
+    <p>See the C.H.I.P. documentation to learn how to use them here.</p>
+    <head rend="h2">Pencil stand</head>
+    <p>
+      <graphic src="/images/stand.jpg" alt="Stand it up with a pencil"/>
+    </p>
+    <p>Give your hands a break! You can prop PocketC.H.I.P. up on a table with a pencil or pen. Pencils go in the hole to the right, and pens in the left hole. You only need one to prop PocketC.H.I.P. up.</p>
+    <head rend="h1">Power and Charging</head>
+    <head rend="h2">Battery Life</head>
+    <p>
+      <graphic src="/images/back.jpg" alt="Check out that battery"/>
+    </p>
+    <p>Your PocketC.H.I.P. uses a 3.7-volt LiPo battery, that should last for about five hours of use. Increase battery life by dimming the screen brightness and turning off WiFi.</p>
+    <p>The top left corner of the screen shows your battery level, and PocketC.H.I.P. will warn you when the battery charge is getting too low for operation.</p>
+    <head rend="h2">Charge PocketC.H.I.P.</head>
+    <p>
+      <graphic src="/images/wall-power.jpg" alt="Charging PocketC.H.I.P. "/>
+    </p>
+    <p>Plug PocketC.H.I.P. into a 5-volt 1.5A power supply with a USB-micro cable to charge the 3.7V battery.</p>
+    <p>Because it’s C.H.I.P.'s on-board circuitry that manages the charging of PocketC.H.I.P.'s battery, the C.H.I.P. must remain attached to PocketC.H.I.P. for battery charging.</p>
+    <p>PocketC.H.I.P. is compatible with with most cell phone chargers that use a USB-micro cable.</p>
+    <head rend="h2">Sleep and Shutdown</head>
+    <p>
+      <graphic src="/images/no_scale/power-icon.jpg" alt="Power icon"/>
+    </p>
+    <head rend="h3">Sleep</head>
+    <p>Sleep is a low-power state that saves battery, and also saves you time, since it’s faster for PocketC.H.I.P. to wake from sleep than to boot from a powered-off state.</p>
+    <p>To enter sleep mode, tap the power icon in the bottom left corner of the home screen and select “Sleep.” from the menu.</p>
+    <p>PocketC.H.I.P. is designed to turn off the screen and backlight after a few minutes without any user interaction.</p>
+    <p>To wake up PocketC.H.I.P. from sleep state, simply touch the screen or press a key.</p>
+    <p>
+      <graphic src="/images/power-menu.jpg" alt="Power menu"/>
+    </p>
+    <head rend="h3">Shutdown</head>
+    <p>Shutdown PocketC.H.I.P. by pressing the power icon in the bottom left corner of the home screen and tapping “shutdown.”</p>
+    <p>If for some reason, PocketC.H.I.P. becomes unresponsive, you can also shut down PocketC.H.I.P. by holding down the HOME/Power button for eight seconds. This cuts battery power to PocketC.H.I.P. and shuts it off. Only use this method if all other methods do not work.</p>
+    <head rend="h1">Using PocketC.H.I.P.</head>
+    <head rend="h2">Keyboard Shortcuts</head>
+    <p>PocketC.H.I.P. has a few keyboard shortcuts that will make it faster for you to do common tasks on the device.</p>
+    <list rend="ul">
+      <item>
+        <p>When multiple applications are open, hold CTRL and press TAB to change the current window (also known as window focus).</p>
+      </item>
+      <item>
+        <p>Hold CTRL and press q to quit an application.</p>
+      </item>
+    </list>
+    <head rend="h2">Flashing</head>
+    <p>To flash PocketC.H.I.P., take C.H.I.P. out and flash it independently. To flash it with the latest factory image follow the Flash C.H.I.P. With an OS instructions on the C.H.I.P. doc page.</p>
+    <p>WARNING: This will permanently delete all the data on PocketC.H.I.P., so backup anything you want to keep!</p>
+    <head rend="h1">Applications</head>
+    <p>
+      <graphic src="/images/homescreen.png" alt="Homescreen"/>
+    </p>
+    <p>Your PocketC.H.I.P. comes with six applications on the Home Screen.</p>
+    <list rend="ul">
+      <item>PICO-8 - play, create, share 8-bit games</item>
+      <item>SUNVOX - listen or compose electronic music</item>
+      <item>Terminal - use a Linux shell to run commands</item>
+      <item>Write - a lightweight text editor</item>
+      <item>File Browser - a graphical file browser</item>
+      <item>Help - the same documentation you’re reading here, built into PocketC.H.I.P.</item>
+    </list>
+    <head rend="h2">PICO-8</head>
+    <p>
+      <graphic src="/images/no_scale/pico8-icon.jpg" alt="PICO-8 icon"/>
+    </p>
+    <head rend="h3">Play PICO-8</head>
+    <p>
+      <graphic src="/images/pico-play.jpg" alt="Playing PICO-8 games"/>
+    </p>
+    <p>Play games, change games, and make games with PICO-8! With a couple keystrokes you can join the PICO-8 community and modify their games, or even make your own!</p>
+    <p>For more resources to learn PICO-8, search YouTube for PICO-8 videos and check out the PICO-8 Fanzine link.</p>
+    <p>
+      <graphic src="/images/pico-splore-with-hands.jpg" alt="Splore all the games"/>
+    </p>
+    <p>PICO-8 starts in splore mode, which lets you select which game to load.</p>
+    <p>If PocketC.H.I.P. is connected to WiFi, PICO-8 community made games can be downloaded and played here. Navigate the menus using the arrow keys, and press 0 to select a game.</p>
+    <list rend="ul">
+      <item>Favourites: Save games to this list by pressing ESC while in the game and selecting “Favourite”. Games on this list are playable even when you’re not connected to WiFi.</item>
+      <item>New: Lists the newest additions to the PICO-8 community.</item>
+      <item>Featured: Lists the top-rated games from the PICO-8 community.</item>
+      <item>Work In Progress: Lists recent releases of unfinished games submitted by members of the community.</item>
+      <item>Collaboration: Lists user-submitted resources, remixes, and other useful things for others to use in their creations.</item>
+      <item>Search: Performs a text search of PICO-8’s game library</item>
+      <item>/: Lets you navigate the PICO-8 folders on your PocketC.H.I.P.</item>
+    </list>
+    <p>While in the splore mode, press ESC and select EXIT TO CONSOLE to start PICO-8’s command line interface. PICO-8’s command line commands are listed below:</p>
+    <list rend="ul">
+      <item>help - lists the available commands</item>
+      <item>splore - return to cart explorer</item>
+      <item>dir - list the contents of the current directory</item>
+      <item>cd [directory name] - change to the desired directory</item>
+      <item>cd … - go up a directory</item>
+      <item>cd / - change back to top directory (on PICO-8’s virtual drive)</item>
+      <item>keyconfig - customize the keys used by all games</item>
+      <item>mkdir - make a new directory</item>
+      <item>folder - open the current directory in the host operating system’s file browser</item>
+      <item>load [name of game] - load a game from the current directory (this is like putting a cartridge into the console)</item>
+      <item>run - plays the cart that is currently loaded</item>
+      <item>save [filename] - saves the currently loaded cart with the given name (this is used when you’ve made changes to the game’s code, graphics, or music)</item>
+    </list>
+    <head rend="h3">Make Games (with PICO-8)</head>
+    <p>
+      <graphic src="/images/pico8-icon-callout.png" alt="Edit Screens"/>
+    </p>
+    <p>Gamers, get ready to become game-makers. In addition to playing the community’s games, PICO-8 allows you to modify existing games, or create games of your own using the code, graphics, and sound editors. See the image above to learn which icon stands for which editing mode, and keep reading for an explanation of each mode.</p>
+    <head rend="h3">Code Editor</head>
+    <p>
+      <graphic src="/images/pico-code.jpg" alt="Write your own PICO-8 games"/>
+    </p>
+    <p>Access the code editor from the command line by pressing ESC. If you are in the middle of a game, press ESC and select EDIT THIS CART to edit the game’s code. Some other helpful shortcuts are:</p>
+    <list rend="ul">
+      <item>Hold SHIFT - select multiple characters or lines (or tap-and-drag)</item>
+      <item>CTRL-X, CTRL-C, CTRL-V - cut, copy, or paste a selection</item>
+      <item>CTRL-Z, CTRL-Y - undo, redo</item>
+      <item>CTRL-F, CTRL-G - search for text, repeat search</item>
+      <item>ALT-UP, ALT-DOWN - navigate to the previous, next function</item>
+    </list>
+    <p>The code editor is not the only editor in PICO-8. Access the other editors by tapping on the icons in the upper right-hand corner of the editor.</p>
+    <head rend="h3">Sprite Editor</head>
+    <p>
+      <graphic src="/images/pico-sprites.jpg" alt="Draw custom graphics"/>
+    </p>
+    <p>Use the sprite editor to create custom artwork that makes up tiles, characters, or other graphical elements of the game. The navigator at the bottom of the sprite editor screen shows an 8x8 pixel box that is displayed in the sprite sheet window. It is possible to use the tools (pan, select) to edit larger areas.</p>
+    <p>The tools can be found directly below the 8x8 editor widow and above the sprite sheet. Use the following tools to create and edit sprites:</p>
+    <p>Draw Tool</p>
+    <list rend="ul">
+      <item>Click on the desired color and then click in the editor window to apply the color to each pixel.</item>
+      <item>Hold the CTRL button and click on a pixel to replace all of the same-colored pixels in the window with the selected color.</item>
+    </list>
+    <p>Stamp Tool</p>
+    <list rend="ul">
+      <item>Select an area of the sprite sheet that you want to copy using the select tool. Copy to clipboard with CTRL+C.</item>
+      <item>Select the stamp tool and click the location in the editor window where you want the copied pixels to be pasted. Click the top-left corner to center design.</item>
+      <item>Hold CTRL while stamping to treat the copied black pixels as transparent.</item>
+    </list>
+    <p>Select Tool</p>
+    <list rend="ul">
+      <item>Use the shortcut: SHIFT or S to save time.</item>
+      <item>Click and drag with the select tool to highlight an area of the sprite sheet.</item>
+      <item>Enter or click to select none.</item>
+    </list>
+    <p>Pan Tool</p>
+    <list rend="ul">
+      <item>Use the shortcut: Spacebar.</item>
+      <item>Click and drag to move around the sprite sheet.</item>
+    </list>
+    <p>Fill Tool</p>
+    <list rend="ul">
+      <item>Fill an area with the selected color.</item>
+      <item>If you have selected an area of the sprite sheet, the fill will be limited to the selected area.</item>
+      <item>If no selection is active, the fill will be limited to the area in the editor window.</item>
+    </list>
+    <head rend="h3">Map Editor</head>
+    <p>
+      <graphic src="/images/map.jpg" alt="Create your own levels"/>
+    </p>
+    <p>The tools for the map editor work similarly to those in the sprite editor. However, rather than choosing colors, select a sprite and use the draw or fill tool to place sprites into the map sheet.</p>
+    <head rend="h3">Sound Effects Editor</head>
+    <p>
+      <graphic src="/images/pico-soundfx.jpg" alt="Customize sound effects"/>
+    </p>
+    <p>PICO-8’s sound editor has two view modes: graph view and tracker view. Switch between modes by tapping on the graph and tracker buttons in the upper-left corner of the sound editor.</p>
+    <p>In both views, the number in the top left, under the view selector is the sound effect number. PICO-8 can handle 64 different effects.</p>
+    <p>Change the speed of the sound by clicking on the number in the box labelled SPD. Tap and drag to change the value (dragging left decreases, dragging right increases). The SPD value describes the duration of each note, so the higher the value, the slower the sound will play.</p>
+    <p>The LOOP values define the start and end points of a section of the sound effect that repeats. These can be changed by tapping and dragging like the SPD values.</p>
+    <p>Select from the eight available instruments by clicking on the gray waveform boxes below the SPD and LOOP fields.</p>
+    <p>Press the spacebar to play/stop the current sound effect.</p>
+    <head rend="h3">Graph mode</head>
+    <p>In graph mode, choose an instrument and then click-and-drag left-to-right to draw the sound across the pitch window. Draw higher in the window to create a sound with a higher pitch. Adjust the volume of each note, with the sliders in the volume window at the bottom of the graph mode screen.</p>
+    <head rend="h3">Tracker mode</head>
+    <p>In the tracker mode, each line of six dots represents a note. Each dot represents an aspect of the note. In left-to-right order they are:</p>
+    <list rend="ul">
+      <item>frequency, octave, instrument, volume, and effect.</item>
+    </list>
+    <p>Frequency</p>
+    <list rend="ul">
+      <item>Denoted by the letter of the musical pitch.</item>
+      <item>Input the pitches, using the q2w3er5t6y7ui keys like a piano.</item>
+      <item>Q is a C note, W is a D note.</item>
+      <item>The number keys are the sharps and flats (like the black keys on a piano).</item>
+    </list>
+    <p>Octave</p>
+    <p>For each note, choose octave 1, 2, 3, or 4 in the OCT field at the top, or type the corresponding number. 1 is the lowest octave and 4 is the highest.</p>
+    <p>Instrument</p>
+    <p>Choose one of the instruments in the gray waveform boxes or type the corresponding number (0 through 7).</p>
+    <p>Volume</p>
+    <p>Choose volume level in the VOL field or type the corresponding number (0 through 7).</p>
+    <p>Effect</p>
+    <p>Choose an effect from the boxes under the instruments or type the corresponding number (0 through 7).<lb/> The 8 effects are:</p>
+    <list rend="ul">
+      <item>0 - none</item>
+      <item>1 - slide</item>
+      <item>2 - vibrato</item>
+      <item>3 - drop</item>
+      <item>4 - fade in</item>
+      <item>5 - fade out</item>
+      <item>6 - fast arpeggio</item>
+      <item>7 - slow arpeggio</item>
+    </list>
+    <head rend="h3">Music Editor</head>
+    <p>
+      <graphic src="/images/pico-music.jpg" alt="Compose your soundtrack"/>
+    </p>
+    <p>The music editor allows up to four effects at a time for your game’s soundtrack. Click on the boxes above each column to activate the track and choose which effects will be included in each song pattern.</p>
+    <p>Patterns can be set to move to the next pattern, repeat the current pattern, or stop when finished with the arrow and stop icons on the upper right.</p>
+    <p>PICO-8 can hold up to 64 song patterns.</p>
+    <head rend="h2">SunVox</head>
+    <p>
+      <graphic src="/images/no_scale/sunvox-icon.png" alt="SunVox Icon"/>
+    </p>
+    <p>The SunVox tracker is a fully featured music production studio. It’s lightweight, sounds great, and is designed to work with a stylus on a single, small screen. As a result, it’s a perfect fit for for making music and playing with sound on PocketC.H.I.P…</p>
+    <p>To get started launch SunVox, put on some headphones, press SHIFT-space to start playback, and dive into a complete world of electronic sound. While SunVox is pretty much limitless in its configuration, C.H.I.P. has limited CPU and memory resources. Keep in mind if you add a lot of filters, reverbs, and delays, SunVox might stutter on playback. It’s also a good idea to quit any other processes running on C.H.I.P… Use <code>ALT-tab</code> to go to other applications and windows and <code>CTL-q</code> to quit them.</p>
+    <head rend="h3">Interface Overview</head>
+    <p>Here’s a quick overview of what you see when you launch SunVox, and what the different parts of the interface do. Visit the SunVox page for more information, including complete keyboard mappings. There are also lots of introductory SunVox videos on YouTube, just search for SunVox intro videos.</p>
+    <p>
+      <graphic src="/images/sunvox_editpattern_callout.jpg" alt="SunVox screen areas notated"/>
+    </p>
+    <head rend="h3">Keyboard Shortcuts</head>
+    <p>We’ve modified some of the default keyboard shortcuts to work better with the PocketC.H.I.P. keyboard. Here’s what’s different:</p>
+    <table>
+      <row span="2">
+        <cell role="head">Command</cell>
+        <cell role="head">Keys</cell>
+      </row>
+      <row span="2">
+        <cell>play</cell>
+        <cell>Shift-space</cell>
+      </row>
+      <row span="2">
+        <cell>stop</cell>
+        <cell>Shift-v</cell>
+      </row>
+      <row span="2">
+        <cell>play from beginning</cell>
+        <cell>Shift-b</cell>
+      </row>
+      <row span="2">
+        <cell>play pattern</cell>
+        <cell>Shift-n</cell>
+      </row>
+      <row span="2">
+        <cell>record</cell>
+        <cell>Shift-r</cell>
+      </row>
+      <row>
+        <cell>octaves 0-8</cell>
+        <cell>Shift-[0-8]</cell>
+      </row>
+    </table>
+    <head rend="h3">Pattern Editor</head>
+    <p>
+      <graphic src="/images/sunvox_editpattern.jpg" alt="SunVox pattern editor"/>
+    </p>
+    <p>The Pattern Editor is like a page of sheet music. Instead of staffs, measures, clefs, notes, and articulations, it has 32 rows and several columns that represent pitch, timing, and even how a pitch is played (soft, hard, bright, etc).</p>
+    <p>Patterns represent chunks of a song that will later be dropped into the timeline of the song and arranged with other patterns.</p>
+    <p>Note: All the numbers are in hexadecimal, so instead of the number 46, you’ll see 2E. These notes can play drums, lead instruments that sound like a guitar (maybe), bass notes, or even atonal washes of sound.</p>
+    <p>In the pattern editor you can add notes and note modifiers to compose patterns.</p>
+    <p>Spacebar toggles edit mode on and off, use the arrow keys to select rows, use letters to enter notes, use numbers to enter (hexadecimal) values for velocity, module, and control values.</p>
+    <head rend="h3">Touch Keyboard</head>
+    <p>The Touch Keyboard is in the middle of the screen. Tap on it and you’ll hear sound.</p>
+    <p>If you’re editing a Pattern, you can use this to enter notes. Just tap in the first column in the editor where you want a note to play and then tap the note on the touch keyboard. The editor will record the note you play and then move to the next line so you can tap the next note you want to play.</p>
+    <p>You can also use PocketC.H.I.P.'s QWERTY keyboard to enter notes. To enter notes on the QWERTY keyboard, use it similar to a piano. For example, Z is a c note and X is a d note.</p>
+    <p>From left to right across the bottom row of the keyboard, the notes ascend.</p>
+    <p>For sharp and flat notes, use the row above. For example, S is a c-sharp because it is above and between the Z and X keys (similar to where the c-sharp key is on a piano, above and between the c and d notes).</p>
+    <head rend="h3">Modules (synths and effects)</head>
+    <p>
+      <graphic src="/images/sunvox_modules.jpg" alt="SunVox modules"/>
+    </p>
+    <p>The Module Editor is located below the Touch Keyboard on its right. This includes the different instruments, synthesizers, or effects you can use to change the sounds that you put into the patterns above. You can add new modules, delete current modules or rearrange modules to fit your needs.</p>
+    <p>With any sounds you make, you need something to generate the sound first. Double-tap on the background in the module editor and then choose a generator from the list. Once you’ve picked a generator you need to connect it to the output. Do this by holding SHIFT and then tapping and dragging from the generator to the OUT box</p>
+    <p>You can also add effects to the sounds made by the generator. Double-tap in the background again and choose an effect from the list. Now change the route the sound goes through by tapping and dragging from the generator to the effect. Then tap-and-drag from the effect to the output box.</p>
+    <p>You can have multiple instruments and different paths for the sound in the editor at one time. When editing patterns, tap on the generator you want to use and then edit the pattern. Changes to the pattern will be made using the currently selected generator.</p>
+    <p>To delete an effect or generator, double-tap the module and tap the delete button.</p>
+    <head rend="h3">Parameter Controls</head>
+    <p>Parameter Controls for the currently selected module are in the bottom left corner of the interface. Violin players can bend a string and change how they bow, vocalists can shape their mouths and vocal chords, electric guitarists can stomp on pedals and hit the whammy bar, synthesizer nerds can turn knobs and sliders. In SunVox, you can modify how a synth or effect sounds using the horizontal sliders in the Parameter Controls.</p>
+    <p>Tap on a module and use the Parameter Controls on the left to modify the sound. Play the (piano or PocketC.H.I.P.) keyboard to hear the sound of a synth module. Use CTRL-arrows to jump to different modules. SHIFT-drag to connect and disconnect modules.</p>
+    <list rend="ul">
+      <item>
+        <p>Resize Handles</p>
+        <p>Tap-and-drag in these areas to resize the panels.</p>
+      </item>
+      <item>
+        <p>Transport</p>
+        <p>Record new pattern into timeline, play from beginning, play, play pattern, stop.</p>
+      </item>
+    </list>
+    <head rend="h4">Octave Up/Down</head>
+    <p>Change the octave of the touch keyboard.</p>
+    <list rend="ul">
+      <item>
+        <p>Edit Pattern Indicator</p>
+        <p>When locked, you can’t make changes to the pattern.</p>
+      </item>
+      <item>
+        <p>Spacebar</p>
+        <p>Unlocks the world of pattern editing!</p>
+      </item>
+      <item>
+        <p>Volume</p>
+        <p>Tap-and-drag the volume control to change output volume.</p>
+      </item>
+      <item>
+        <p>Menu Items</p>
+        <p>Sunvox has one simple menu. Tap here to save and load projects, set preferences like MIDI controllers, and the ultra-fun Touch Theremin feature! Select it in the Menu, and start making some noise!</p>
+      </item>
+      <item>
+        <p>Switch To Timeline</p>
+        <p>The Timeline allows you to place, move, and rearrange patterns to create a song. On PocketC.H.I.P.'s small screen, you’ll need to use the Switch To Timeline button.</p>
+        <p>In Timeline, you can also freely record notes while you play them with the Record button, or you can clone patterns to repeat them. Move the pattern blocks around to create your composition. When finished, you can render a finished stereo file and distribute it as you want!</p>
+      </item>
+    </list>
+    <p>
+      <graphic src="/images/sunvox_timeline.jpg" alt="SunVox timeline view"/>
+    </p>
+    <list rend="ul">
+      <item>
+        <p>MIDI</p>
+        <p>You can attach a MIDI keyboard or controller to PocketC.H.I.P.'s USB port and have even more fun with SunVox. Not only can you play notes from a keyboard, but you can use MIDI knobs and sliders to control parameters of different synths.</p>
+      </item>
+    </list>
+    <head rend="h2">Terminal</head>
+    <p>
+      <graphic src="/images/no_scale/terminal-icon.png" alt="image of terminal"/>
+    </p>
+    <p>Many may find the Terminal archaic or intimidating, it’s a place to type commands directly to the computer for execution and evaluation by the operating system. There are no icons, just text.</p>
+    <p>Use the terminal to dive into the operating system’s guts, quickly move files around, play with PocketC.H.I.P.'s GPIO, or extend its capabilities. There’s a primer on using Terminal in the C.H.I.P. documentation here if you want to learn more.</p>
+    <head rend="h3">Terminal Top Buttons</head>
+    <p>
+      <graphic src="/images/no_scale/application_terminal_top.jpg" alt="Terminal buttons"/>
+    </p>
+    <p>The Terminal has a few small buttons at top. From left to right, they are:</p>
+    <list rend="ul">
+      <item>New Tab</item>
+      <item>Close Tab</item>
+      <item>Zoom in (increase font size)</item>
+      <item>Zoom out (decrease font size)</item>
+      <item>Copy selected text</item>
+      <item>Previous tab</item>
+      <item>Next tab</item>
+      <item>Flip toolbar</item>
+      <item>Paste - Paste selected text (from another tab, not another application)</item>
+    </list>
+    <head rend="h2">Write</head>
+    <p>
+      <graphic src="/images/no_scale/write-icon.png" alt="image of write"/>
+    </p>
+    <p>Write is a minimalist text editor that’s well suited for basic text entry tasks. If you’re looking to code with Write, you’ll be pleased to learn that it supports line numbering and auto indentation, just look under the “Option” menu.</p>
+    <head rend="h2">File Browser</head>
+    <p>
+      <graphic src="/images/no_scale/browser-icon.png" alt="image of file browser"/>
+    </p>
+    <p>The File Browser provides a visual representation of the files on your PocketC.H.I.P. using icons. Drag, drop, and double-click your way through this application for full control over every file on your device.</p>
+    <head rend="h2">Help</head>
+    <p>
+      <graphic src="/images/no_scale/help-icon.jpg" alt="image of help icon"/>
+    </p>
+    <p>You are reading it right now. No kidding! This document is available online and locally on PocketC.H.I.P., which means anywhere PocketC.H.I.P. goes, help will be right there with it.</p>
+    <head rend="h1">Settings</head>
+    <p>
+      <graphic src="/images/bright.png" alt="settings"/>
+    </p>
+    <p>Use the PocketC.H.I.P. settings to change WiFi, screen brightness, or volume levels.</p>
+    <p>
+      <graphic src="/images/no_scale/settings-icon.jpg" alt="sproket"/>
+    </p>
+    <p>To access the PocketC.H.I.P. settings, tap on the sprocket icon on the Home Screen.</p>
+    <head rend="h2">WiFi &amp; Bluetooth</head>
+    <p>
+      <graphic src="/images/wifi-setting.jpg" alt="wifi settings"/>
+    </p>
+    <p>From the Settings Screen, tap the toggle switch next to the WiFi icon to turn WiFi on or off.</p>
+    <p>Press the button to the right of the WiFi switch to open a menu of all the networks in range. Scroll through the list by tapping the onscreen arrows, and select your network by tapping on its name.</p>
+    <p>When prompted, enter the network password in the text field, then touch the Connect button. It may take a few seconds to connect.</p>
+    <p>Currently only WiFi is configurable from the PocketC.H.I.P graphical interface. If you want to configure Bluetooth, consult the C.H.I.P. documentation page here.</p>
+    <head rend="h2">Screen Brightness</head>
+    <p>
+      <graphic src="/images/brightness.jpg" alt="brightness"/>
+    </p>
+    <p>Tap the brightness slider on the left to decrease brightness or tap the right to increase. Lowering the brightness is an easy way to increase battery life.</p>
+    <head rend="h2">Volume</head>
+    <p>
+      <graphic src="/images/volume.jpg" alt="volume"/>
+    </p>
+    <p>Adjust the volume slider by tapping on the left to decrease volume or on the right to increase it. Of course, you’ll need to have headphones or speakers attached to PocketC.H.I.P. to hear anything.</p>
+    <head rend="h2">Security</head>
+    <p>Just like you have a username and password for your e-mail account, PocketC.H.I.P. has a username and password for its operating system. The main user account on PocketC.H.I.P. is chip, and the password is also chip. Both username and password are case sensitive.</p>
+    <p>At startup, PocketC.H.I.P. automatically logs you in as chip. This means there’s no need to manually enter chip’s password chip. There are times when you’ll need to use the chip password, but you can get most things done without it.</p>
+    <p>PocketC.H.I.P. also has a second username called root, which should only be used for administrative tasks such as installing and removing software. The root password is also chip, and both are also case sensitive.</p>
+    <p>Never login directly as root, since it is extremely easy to delete critical files in the system. Instead, use the system administration command sudo, which provides a bit of protection from accidentally breaking your system.</p>
+    <p>For more information on using sudo, see the C.H.I.P. docs here.</p>
+    <table>
+      <row span="2">
+        <cell role="head">Username</cell>
+        <cell role="head">Password</cell>
+      </row>
+      <row span="2">
+        <cell>chip</cell>
+        <cell>chip</cell>
+      </row>
+      <row>
+        <cell>root</cell>
+        <cell>chip</cell>
+      </row>
+    </table>
+    <head rend="h3">Changing Your Password</head>
+    <p>
+      <graphic src="/images/no_scale/terminal-icon.png" alt="terminal icon"/>
+    </p>
+    <p>You should change your password for both the chip and root account to something other than the default, chip. Open the terminal application from the PocketC.H.I.P. Home Screen and type the following command:</p>
+    <p>
+      <code>passwd</code>
+    </p>
+    <p>and press ENTER.</p>
+    <p>You’ll be prompted for your current password, which is chip and then required to enter in your new password twice. That’s it!</p>
+    <head rend="h1">Using Accessories</head>
+    <p>Just because PocketC.H.I.P. is complete with a keyboard and screen doesn’t mean you can’t add speakers, storage, or wireless gadgets to make it even more fun.</p>
+    <p>PocketC.H.I.P. input and output ports are all handled by C.H.I.P.. Chances are good that if an accessory works with C.H.I.P., it will work with PocketC.H.I.P.!</p>
+    <p>
+      <graphic src="/images/ports.png" alt="Accessory ports"/>
+    </p>
+    <head rend="h2">Audio</head>
+    <p>
+      <graphic src="/images/headphones.jpg" alt="Headphones"/>
+    </p>
+    <p>PocketC.H.I.P. does not have a built-in speaker, but that doesn’t mean it can’t output sound.</p>
+    <p>To listen to audio from PocketC.H.I.P. attach any wired headphones or speakers to the audio jack at the top of the device. This jack is known as a TRRS jack and can accommodate headphones. With a simple modification to the C.H.I.P., the TRRS jack can accomodate headphones that have built-in microphones.</p>
+    <head rend="h2">Micro-USB</head>
+    <p>
+      <graphic src="/images/wall-power.jpg" alt="Charging"/>
+    </p>
+    <p>Use the micro-USB port for charging PocketC.H.I.P. with a 5-volt, 1.5-amp power supply. Most cell phone chargers that use a USB-micro cable will work with PocketC.H.I.P.</p>
+    <head rend="h2">Standard USB</head>
+    <p>
+      <graphic src="/images/webcam.jpg" alt="Webcam"/>
+    </p>
+    <p>Use the standard USB port for attaching USB accessories, like a keyboard, mouse, MIDI controller, sound card, hard drive, or more.</p>
+    <p>USB devices take power to operate. If they are not independently powered, they will reduce the battery life of PocketC.H.I.P. or cause operation to become sporadic.</p>
+    <head rend="h1">Workshop Materials</head>
+    <p>Would you like to run a workshop using PocketC.H.I.P.? In this section you will find materials for use in the classroom or to use while developing your own curriculum. We’ve created introductions to PocketC.H.I.P. and Pico-8 so you get comfortable with basic operations and commands before running a lesson. We have also created several activities to start with that can be used either together or taught as separate modules. Included are editable files so you can customize the lessons or grab what assets you would like to use for your own. If you don’t see a file format that’s helpful to you reach out to docs@nextthing.co and let us know what you need.</p>
+    <p>All use the application Pico-8, the fantasy console used to play, create, and share games that comes installed on every PocketC.H.I.P… Pico-8 has proven to be excellent for learning exercises emphasizing programming and game design skills.</p>
+    <head rend="h2">Getting Started</head>
+    <p>These introductory materials are written for educators but can also be used in educational material for students. They will teach you the basics needed in order to lead an activity using PocketC.H.I.P. and Pico-8.</p>
+    <head rend="h2">Activity Outlines</head>
+    <list rend="ul">
+      <item>Pico-8 x PocketCHIP: Customize Celeste - This lesson includes several ways of editing a favorite Pico-8 game, Celeste. Change the way Celeste looks, edit the map to create bridges to walk over and learn how to search and change Celeste’s source code so Celeste can jump higher and advance onto the next level!</item>
+      <item>Pico-8 x PocketCHIP: Start Creating a Game from Scratch - This lesson starts you on the path to creating a Pico-8 game from scratch. Learn how to create a sprite and make it move with the D-pad controller.</item>
+      <item>Pico-8 x PocketCHIP: Make Celeste Jump Higher! - A short, one page tutorial on how to edit the code of Celeste to make her jump higher.</item>
+      <item>Pico-8 x PocketCHIP: Edit Celeste Sprite - A short, one page tutorial on how to edit the look of Celeste.</item>
+      <item>Pico-8 x PocketCHIP: Make an LED Blink with Pico-8 - A short, one page tutoroal that can easily be expanded upon to create a longer lesson covering basic DC electric circuits. Comes with an accompanying reference file defining all the parts of the circuit and how they function.</item>
+    </list>
+    <head rend="h3">Parts List and Sources</head>
+    <p>Parts for the LED activity and where to get them.</p>
+    <head rend="h1">Glossary</head>
+    <p>apt-get: the package manager used for installing, upgrading, and removing application in Debian Linux.</p>
+    <p>Bezel: section of the case that clips around the touchscreen.</p>
+    <p>Booting: the process of PocketC.H.I.P. powering on and loading Debian.</p>
+    <p>Command Line: the area in the Terminal where text is input for the Operating System to evaluate.</p>
+    <p>Debian: a version of the Linux Operating System that runs on PocketC.H.I.P…</p>
+    <p>Fantasy Console: a console game system that does not have dedicated, specific hardware to run its software. For example, PICO-8.</p>
+    <p>Flashing: the process of overwriting the contents of NAND with an Operating System and Applications.</p>
+    <p>Linux: a computer Operating System that runs on all different types of hardware. Everything from bank ATMs and cell phones to C.H.I.P. and PocketC.H.I.P.</p>
+    <p>NAND: a type of storage used on PocketC.H.I.P. for the OS, applications, and all your files.</p>
+    <p>Open Source Hardware: Open source hardware is hardware whose design is made publicly available so that anyone can study, modify, distribute, make, and sell the design or hardware based on that design. More info at the Open Source Hardware Association.</p>
+    <p>Open Source Software: Very briefly, Open Source Software is software where the source code for a program is made freely available. But there’s a lot more to this, as you can read at the Open Source Initiative website.</p>
+    <p>QWERTY keyboard: is a layout of keys where the top row’s first six keys spell “qwerty”.</p>
+    <p>SCP: a utility to transfer files to different computers.</p>
+    <p>Shell: see Terminal</p>
+    <p>SSH: (aka Secure Shell) is a utility used to login to remote computers running SSH service.</p>
+    <p>Stylus: a pointing device</p>
+    <p>Terminal: a program used to enter text commands for the Operating System to execute or interpret.</p>
+    <p>TRRS jack: a connector commonly used for audio or video equipment. TRRS stands for tip, ring, ring, and sleeve and refers the the way the male connector is divided.</p>
+    <head rend="h1">FAQ</head>
+    <p>Can I take C.H.I.P. out of PocketC.H.I.P. and use it?</p>
+    <p>At this time, it will not work as expected without reflashing. The C.H.I.P.s in PocketC.H.I.P. run a custom graphics software that’s designed for the touchscreen and PocketC.H.I.P. keyboard. C.H.I.P. may boot, but the resolution and input will not work as expected.</p>
+    <p>Is it Legal to Modify PocketC.H.I.P.?</p>
+    <p>Yes. PocketC.H.I.P. and C.H.I.P. are open source hardware. We encourage you to modify PocketC.H.I.P. and be sure to share what you’ve done with our community!</p>
+    <p>Is PocketC.H.I.P. Open Source?</p>
+    <p>Yes, and you can get the hardware files at our github repo.</p>
+    <p>Will my microUSB charger work with PocketC.H.I.P.?</p>
+    <p>PocketC.H.I.P. is compatible with most cell phone chargers that use a USB-micro cable. PocketC.H.I.P. needs a power supply capable of outputting 5-volts with at least 1 amp.</p>
+    <p>Can I connect PocketC.H.I.P. to a second display?</p>
+    <p>No. At this time PocketC.H.I.P. does not support multiple displays.</p>
+    <p>Will my Bluetooth device work?</p>
+    <p>Yes, so long as the device is supported under Debian Linux. However, you will need to setup the bluetooth pairing using the terminal here. Our initial release of PocketC.H.I.P. does not provide graphical bluetooth configuration.</p>
+    <p>Pinch-zooming isn’t working, is my screen bad?</p>
+    <p>Your screen is fine. The resistive touchscreen used in PocketC.H.I.P. does not support pinch gestures.</p>
+    <p>How can I get PockulusC.H.I.P.?</p>
+    <p>Good news! You already almost have one. All you need to do is 3D print the file found here. If you do not own a 3D printer find a friend to do it for you.</p>
+    <p>How can I contact Next Thing Co.?</p>
+    <p>Send us an e-mail at ahoyahoy@nextthing.co.</p>
+    <head rend="h1">License</head>
+    <head rend="h2">U-Boot</head>
+    <p>PocketC.H.I.P. boots using U-Boot 2015.10 (GPLv2) with custom patches.</p>
+    <p>Source code is available at:</p>
+    <p>See below for the full text of the GPLv2.</p>
+    <head rend="h2">Linux</head>
+    <p>PocketC.H.I.P. runs mainline Linux 4.3 (GPLv2) with custom patches.</p>
+    <p>Source code is available at:</p>
+    <p>See below for the full text of the GPLv2.</p>
+    <head rend="h2">PocketC.H.I.P. runs Debian 8 (Jessie)</head>
+    <list rend="ul">
+      <item>Debian contains various open source software.</item>
+      <item>The license for a particular debian package is included in the package documentation in /usr/share/doc/<package-name>.</package-name></item>
+    </list>
+    <head rend="h2">PocketC.H.I.P. Launcher</head>
+    <p>The PocketC.H.I.P. Launcher is Copyright © 2016 Next Thing Co.</p>
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+    <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+    <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    <p>The PocketC.H.I.P. Launcher is built using JUCE</p>
+    <p>https://github.com/julianstorer/JUCE</p>
+    <p>Most JUCE modules are shared under the GNU Public Licence<lb/> (GPLv2, v3, and the AGPLv3). This means that the code can<lb/> be freely copied and distributed, and costs nothing to use<lb/> in other GPL applications. One module (the juce_core module)<lb/> is permissively licensed under the ISC.</p>
+    <head rend="h2">PICO-8</head>
+    <p>PICO-8 v0.1.6</p>
+    <p>http://www.pico-8.com</p>
+    <p>© Copyright 2014-2016 Lexaloffle Games LLP</p>
+    <p>Author: Joseph White // hey@lexaloffle.com</p>
+    <p>PICO-8 is built with:</p>
+    <list rend="ul">
+      <item>SDL2 http://www.libsdl.org</item>
+      <item>Lua 5.2 http://www.lua.org - see license below</item>
+      <item>GIFLIB http://giflib.sourceforge.net/</item>
+    </list>
+    <p>Copyright © 1994–2015 Lua.org, PUC-Rio.</p>
+    <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<lb/> The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+    <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+    <head rend="h2">SunVox</head>
+    <p>SunVox modular synthesizer</p>
+    <p>Copyright © 2002 - 2016, Alexander Zolotov nightradio@gmail.com, WarmPlace.ru<lb/> SunDog engine (part of SunVox)</p>
+    <p>Copyright © 2002 - 2016, Alexander Zolotov nightradio@gmail.com, WarmPlace.ru</p>
+    <p>Ogg Vorbis ‘Tremor’ integer playback codec<lb/> Copyright © 2002, Xiph.org Foundation</p>
+    <head rend="h2">GNU General Public License</head>
+    <p>GNU GENERAL PUBLIC LICENSE<lb/> Version 2, June 1991</p>
+    <p>Copyright © 1989, 1991 Free Software Foundation, Inc.,<lb/> 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA<lb/> Everyone is permitted to copy and distribute verbatim copies<lb/> of this license document, but changing it is not allowed.</p>
+    <p>Preamble</p>
+    <p>The licenses for most software are designed to take away your<lb/> freedom to share and change it. By contrast, the GNU General Public<lb/> License is intended to guarantee your freedom to share and change free<lb/> software–to make sure the software is free for all its users. This<lb/> General Public License applies to most of the Free Software<lb/> Foundation’s software and to any other program whose authors commit to<lb/> using it. (Some other Free Software Foundation software is covered by<lb/> the GNU Lesser General Public License instead.) You can apply it to<lb/> your programs, too.</p>
+    <p>When we speak of free software, we are referring to freedom, not<lb/> price. Our General Public Licenses are designed to make sure that you<lb/> have the freedom to distribute copies of free software (and charge for<lb/> this service if you wish), that you receive source code or can get it<lb/> if you want it, that you can change the software or use pieces of it<lb/> in new free programs; and that you know you can do these things.</p>
+    <p>To protect your rights, we need to make restrictions that forbid<lb/> anyone to deny you these rights or to ask you to surrender the rights.<lb/> These restrictions translate to certain responsibilities for you if you<lb/> distribute copies of the software, or if you modify it.</p>
+    <p>For example, if you distribute copies of such a program, whether<lb/> gratis or for a fee, you must give the recipients all the rights that<lb/> you have. You must make sure that they, too, receive or can get the<lb/> source code. And you must show them these terms so they know their<lb/> rights.</p>
+    <p>We protect your rights with two steps: (1) copyright the software, and<lb/> (2) offer you this license which gives you legal permission to copy,<lb/> distribute and/or modify the software.</p>
+    <p>Also, for each author’s protection and ours, we want to make certain<lb/> that everyone understands that there is no warranty for this free<lb/> software. If the software is modified by someone else and passed on, we<lb/> want its recipients to know that what they have is not the original, so<lb/> that any problems introduced by others will not reflect on the original<lb/> authors’ reputations.</p>
+    <p>Finally, any free program is threatened constantly by software<lb/> patents. We wish to avoid the danger that redistributors of a free<lb/> program will individually obtain patent licenses, in effect making the<lb/> program proprietary. To prevent this, we have made it clear that any<lb/> patent must be licensed for everyone’s free use or not licensed at all.</p>
+    <p>The precise terms and conditions for copying, distribution and<lb/> modification follow.</p>
+    <p>GNU GENERAL PUBLIC LICENSE<lb/> TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION</p>
+    <list rend="ol">
+      <item>This License applies to any program or other work which contains<lb/>a notice placed by the copyright holder saying it may be distributed<lb/>under the terms of this General Public License. The “Program”, below,<lb/>refers to any such program or work, and a “work based on the Program”<lb/>means either the Program or any derivative work under copyright law:<lb/>that is to say, a work containing the Program or a portion of it,<lb/>either verbatim or with modifications and/or translated into another<lb/>language. (Hereinafter, translation is included without limitation in<lb/>the term “modification”.) Each licensee is addressed as “you”.</item>
+    </list>
+    <p>Activities other than copying, distribution and modification are not<lb/> covered by this License; they are outside its scope. The act of<lb/> running the Program is not restricted, and the output from the Program<lb/> is covered only if its contents constitute a work based on the<lb/> Program (independent of having been made by running the Program).<lb/> Whether that is true depends on what the Program does.</p>
+    <list rend="ol">
+      <item>You may copy and distribute verbatim copies of the Program’s<lb/>source code as you receive it, in any medium, provided that you<lb/>conspicuously and appropriately publish on each copy an appropriate<lb/>copyright notice and disclaimer of warranty; keep intact all the<lb/>notices that refer to this License and to the absence of any warranty;<lb/>and give any other recipients of the Program a copy of this License<lb/>along with the Program.</item>
+    </list>
+    <p>You may charge a fee for the physical act of transferring a copy, and<lb/> you may at your option offer warranty protection in exchange for a fee.</p>
+    <list rend="ol">
+      <item>You may modify your copy or copies of the Program or any portion<lb/>of it, thus forming a work based on the Program, and copy and<lb/>distribute such modifications or work under the terms of Section 1<lb/>above, provided that you also meet all of these conditions:</item>
+    </list>
+    <p>a) You must cause the modified files to carry prominent notices<lb/> stating that you changed the files and the date of any change.</p>
+    <p>b) You must cause any work that you distribute or publish, that in<lb/> whole or in part contains or is derived from the Program or any<lb/> part thereof, to be licensed as a whole at no charge to all third<lb/> parties under the terms of this License.</p>
+    <p>c) If the modified program normally reads commands interactively<lb/> when run, you must cause it, when started running for such<lb/> interactive use in the most ordinary way, to print or display an<lb/> announcement including an appropriate copyright notice and a<lb/> notice that there is no warranty (or else, saying that you provide<lb/> a warranty) and that users may redistribute the program under<lb/> these conditions, and telling the user how to view a copy of this<lb/> License. (Exception: if the Program itself is interactive but<lb/> does not normally print such an announcement, your work based on<lb/> the Program is not required to print an announcement.)</p>
+    <p>These requirements apply to the modified work as a whole. If<lb/> identifiable sections of that work are not derived from the Program,<lb/> and can be reasonably considered independent and separate works in<lb/> themselves, then this License, and its terms, do not apply to those<lb/> sections when you distribute them as separate works. But when you<lb/> distribute the same sections as part of a whole which is a work based<lb/> on the Program, the distribution of the whole must be on the terms of<lb/> this License, whose permissions for other licensees extend to the<lb/> entire whole, and thus to each and every part regardless of who wrote it.</p>
+    <p>Thus, it is not the intent of this section to claim rights or contest<lb/> your rights to work written entirely by you; rather, the intent is to<lb/> exercise the right to control the distribution of derivative or<lb/> collective works based on the Program.</p>
+    <p>In addition, mere aggregation of another work not based on the Program<lb/> with the Program (or with a work based on the Program) on a volume of<lb/> a storage or distribution medium does not bring the other work under<lb/> the scope of this License.</p>
+    <list rend="ol">
+      <item>You may copy and distribute the Program (or a work based on it,<lb/>under Section 2) in object code or executable form under the terms of<lb/>Sections 1 and 2 above provided that you also do one of the following:</item>
+    </list>
+    <p>a) Accompany it with the complete corresponding machine-readable<lb/> source code, which must be distributed under the terms of Sections<lb/> 1 and 2 above on a medium customarily used for software interchange; or,</p>
+    <p>b) Accompany it with a written offer, valid for at least three<lb/> years, to give any third party, for a charge no more than your<lb/> cost of physically performing source distribution, a complete<lb/> machine-readable copy of the corresponding source code, to be<lb/> distributed under the terms of Sections 1 and 2 above on a medium<lb/> customarily used for software interchange; or,</p>
+    <p>c) Accompany it with the information you received as to the offer<lb/> to distribute corresponding source code. (This alternative is<lb/> allowed only for noncommercial distribution and only if you<lb/> received the program in object code or executable form with such<lb/> an offer, in accord with Subsection b above.)</p>
+    <p>The source code for a work means the preferred form of the work for<lb/> making modifications to it. For an executable work, complete source<lb/> code means all the source code for all modules it contains, plus any<lb/> associated interface definition files, plus the scripts used to<lb/> control compilation and installation of the executable. However, as a<lb/> special exception, the source code distributed need not include<lb/> anything that is normally distributed (in either source or binary<lb/> form) with the major components (compiler, kernel, and so on) of the<lb/> operating system on which the executable runs, unless that component<lb/> itself accompanies the executable.</p>
+    <p>If distribution of executable or object code is made by offering<lb/> access to copy from a designated place, then offering equivalent<lb/> access to copy the source code from the same place counts as<lb/> distribution of the source code, even though third parties are not<lb/> compelled to copy the source along with the object code.</p>
+    <list rend="ol">
+      <item><p>You may not copy, modify, sublicense, or distribute the Program</p><lb/>except as expressly provided under this License. Any attempt<lb/>otherwise to copy, modify, sublicense or distribute the Program is<lb/>void, and will automatically terminate your rights under this License.<lb/>However, parties who have received copies, or rights, from you under<lb/>this License will not have their licenses terminated so long as such<lb/>parties remain in full compliance.</item>
+      <item><p>You are not required to accept this License, since you have not</p><lb/>signed it. However, nothing else grants you permission to modify or<lb/>distribute the Program or its derivative works. These actions are<lb/>prohibited by law if you do not accept this License. Therefore, by<lb/>modifying or distributing the Program (or any work based on the<lb/>Program), you indicate your acceptance of this License to do so, and<lb/>all its terms and conditions for copying, distributing or modifying<lb/>the Program or works based on it.</item>
+      <item><p>Each time you redistribute the Program (or any work based on the</p><lb/>Program), the recipient automatically receives a license from the<lb/>original licensor to copy, distribute or modify the Program subject to<lb/>these terms and conditions. You may not impose any further<lb/>restrictions on the recipients’ exercise of the rights granted herein.<lb/>You are not responsible for enforcing compliance by third parties to<lb/>this License.</item>
+      <item><p>If, as a consequence of a court judgment or allegation of patent</p><lb/>infringement or for any other reason (not limited to patent issues),<lb/>conditions are imposed on you (whether by court order, agreement or<lb/>otherwise) that contradict the conditions of this License, they do not<lb/>excuse you from the conditions of this License. If you cannot<lb/>distribute so as to satisfy simultaneously your obligations under this<lb/>License and any other pertinent obligations, then as a consequence you<lb/>may not distribute the Program at all. For example, if a patent<lb/>license would not permit royalty-free redistribution of the Program by<lb/>all those who receive copies directly or indirectly through you, then<lb/>the only way you could satisfy both it and this License would be to<lb/>refrain entirely from distribution of the Program.</item>
+    </list>
+    <p>If any portion of this section is held invalid or unenforceable under<lb/> any particular circumstance, the balance of the section is intended to<lb/> apply and the section as a whole is intended to apply in other<lb/> circumstances.</p>
+    <p>It is not the purpose of this section to induce you to infringe any<lb/> patents or other property right claims or to contest validity of any<lb/> such claims; this section has the sole purpose of protecting the<lb/> integrity of the free software distribution system, which is<lb/> implemented by public license practices. Many people have made<lb/> generous contributions to the wide range of software distributed<lb/> through that system in reliance on consistent application of that<lb/> system; it is up to the author/donor to decide if he or she is willing<lb/> to distribute software through any other system and a licensee cannot<lb/> impose that choice.</p>
+    <p>This section is intended to make thoroughly clear what is believed to<lb/> be a consequence of the rest of this License.</p>
+    <list rend="ol">
+      <item><p>If the distribution and/or use of the Program is restricted in</p><lb/>certain countries either by patents or by copyrighted interfaces, the<lb/>original copyright holder who places the Program under this License<lb/>may add an explicit geographical distribution limitation excluding<lb/>those countries, so that distribution is permitted only in or among<lb/>countries not thus excluded. In such case, this License incorporates<lb/>the limitation as if written in the body of this License.</item>
+      <item><p>The Free Software Foundation may publish revised and/or new versions</p><lb/>of the General Public License from time to time. Such new versions will<lb/>be similar in spirit to the present version, but may differ in detail to<lb/>address new problems or concerns.</item>
+    </list>
+    <p>Each version is given a distinguishing version number. If the Program<lb/> specifies a version number of this License which applies to it and “any<lb/> later version”, you have the option of following the terms and conditions<lb/> either of that version or of any later version published by the Free<lb/> Software Foundation. If the Program does not specify a version number of<lb/> this License, you may choose any version ever published by the Free Software<lb/> Foundation.</p>
+    <list rend="ol">
+      <item><p>If you wish to incorporate parts of the Program into other free</p><lb/>programs whose distribution conditions are different, write to the author<lb/>to ask for permission. For software which is copyrighted by the Free<lb/>Software Foundation, write to the Free Software Foundation; we sometimes<lb/>make exceptions for this. Our decision will be guided by the two goals<lb/>of preserving the free status of all derivatives of our free software and<lb/>of promoting the sharing and reuse of software generally.<p>NO WARRANTY</p></item>
+      <item><p>BECAUSE THE PROGRAM IS LICENSED FREE OF CHARGE, THERE IS NO WARRANTY</p><lb/>FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN<lb/>OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES<lb/>PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED<lb/>OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF<lb/>MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS<lb/>TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE<lb/>PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,<lb/>REPAIR OR CORRECTION.</item>
+      <item><p>IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING</p><lb/>WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY MODIFY AND/OR<lb/>REDISTRIBUTE THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES,<lb/>INCLUDING ANY GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING<lb/>OUT OF THE USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED<lb/>TO LOSS OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY<lb/>YOU OR THIRD PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER<lb/>PROGRAMS), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE<lb/>POSSIBILITY OF SUCH DAMAGES.<p>END OF TERMS AND CONDITIONS</p><p>How to Apply These Terms to Your New Programs</p></item>
+    </list>
+    <p>If you develop a new program, and you want it to be of the greatest<lb/> possible use to the public, the best way to achieve this is to make it<lb/> free software which everyone can redistribute and change under these terms.</p>
+    <p>To do so, attach the following notices to the program. It is safest<lb/> to attach them to the start of each source file to most effectively<lb/> convey the exclusion of warranty; and each file should have at least<lb/> the “copyright” line and a pointer to where the full notice is found.</p>
+    <p>&lt;one line to give the program’s name and a brief idea of what it does.&gt;<lb/> Copyright © </p>
+    <p>This program is free software; you can redistribute it and/or modify<lb/> it under the terms of the GNU General Public License as published by<lb/> the Free Software Foundation; either version 2 of the License, or<lb/> (at your option) any later version.</p>
+    <p>This program is distributed in the hope that it will be useful,<lb/> but WITHOUT ANY WARRANTY; without even the implied warranty of<lb/> MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the<lb/> GNU General Public License for more details.</p>
+    <p>You should have received a copy of the GNU General Public License along<lb/> with this program; if not, write to the Free Software Foundation, Inc.,<lb/> 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.</p>
+    <p>Also add information on how to contact you by electronic and paper mail.</p>
+    <p>If the program is interactive, make it output a short notice like this<lb/> when it starts in an interactive mode:</p>
+    <p>Gnomovision version 69, Copyright © year name of author<lb/> Gnomovision comes with ABSOLUTELY NO WARRANTY; for details type ‘show w’.<lb/> This is free software, and you are welcome to redistribute it<lb/> under certain conditions; type ‘show c’ for details.</p>
+    <p>The hypothetical commands ‘show w’ and ‘show c’ should show the appropriate<lb/> parts of the General Public License. Of course, the commands you use may<lb/> be called something other than ‘show w’ and ‘show c’; they could even be<lb/> mouse-clicks or menu items–whatever suits your program.</p>
+    <p>You should also get your employer (if you work as a programmer) or your<lb/> school, if any, to sign a “copyright disclaimer” for the program, if<lb/> necessary. Here is a sample; alter the names:</p>
+    <p>Yoyodyne, Inc., hereby disclaims all copyright interest in the program<lb/> ‘Gnomovision’ (which makes passes at compilers) written by James Hacker.</p>
+    <p><lb/> Ty Coon, President of Vice</p>
+    <p>This General Public License does not permit incorporating your program into<lb/> proprietary programs. If your program is a subroutine library, you may<lb/> consider it more useful to permit linking proprietary applications with the<lb/> library. If this is what you want to do, use the GNU Lesser General<lb/> Public License instead of this License.</p>
   </main>
   <comments/>
 </doc>

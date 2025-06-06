@@ -1,115 +1,25 @@
-<doc title="The Verge reviews PocketCHIP...rather poorly" date="2025-06-04" fingerprint="7e24011772c5a4f5">
+<doc sitename="The Verge" title="PocketChip review: why do I want this?" author="Paul Miller" date="2016-07-19" url="https://www.theverge.com/circuitbreaker/2016/7/19/12227806/pocketchip-review-portable-linux-computer" hostname="theverge.com" description="The Verge is about technology and how it makes us feel. Founded in 2011, we offer our audience everything from breaking news to reviews to award-winning features and investigations, on our site, in video, and in podcasts." categories="Circuit Breaker" tags="theverge,pagetype:story,circuitbreaker,gadgets,linux,reviews,tech" fingerprint="8782a81953aeb13d">
   <main>
-    <p>The Verge did a quick review of PocketCHIP and while most of it seems to focus on the complexity of Linux as an OS, they do talk about Pico-8. But it's less about Pico-8 as a platform and more so just talking about how using it on the PocketCHIP is quite difficult and unfun. Although, if the buttons are really that "clicky" then I can see how some games will be difficult-ish.</p>
-    <p>http://www.theverge.com/circuitbreaker/2016/7/19/12227806/pocketchip-review-portable-linux-computer</p>
-    <p>But I'm not buying it...I'm stoked to get my PocketCHIP and pretty much plan to use it as a Pico-8 handheld device only. I know it's a full Linux PC and that's cool but P8 is primary function for me, everything else secondary. We'll see but I can also tell that I've spent a lot more than $50 on crappier products (or even just for dinner this week).</p>
-    <p>And hey...Hug Arena pic! Woot!</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12398/flower.png"/>
-    <p>I think he's being a little harsh. It's a device that's meant to be played around with, not a device that was meant to replace an iPhone or a laptop, right? Surely anyone in the know enough to buy one of these things knew that it was essentially an opensource Raspberry Pi gameboy; with all the good and bad that comes with that.</p>
-    <p>The buttons do seem kind of hard to push down, though :/</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/11167/48x48.png"/>
-    <p>&gt; if the buttons are really that "clicky"...<lb/> Yes, they are :-(<lb/> You have to use an USB keyboard (and mouse) to do serious things...</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
-    <p>As long as the keys aren't too bad for actually playing the games, I'll be happy (and maybe they'll get softer the more you use it too). I guess I never really expected to do much coding on the Pocket outside of quick testing to see if a routine works or demo or something.</p>
-    <p>Although, knowing how clicky they are is good when thinking about the games we make. I know not everyone plays on Pocket (most probably won't) but definitely something to keep in mind, I guess.</p>
-    <p>Probably silly to have the thing as a gaming device but hey...I'm sure I'll find some other purpose for it as well once I dive down the rabbit hole.</p>
-    <p>@david - I totally agree...the Pocket isn't a mass consumer device, it's a hobbyist kit for those of us (like me) that don't have time/skill/budget to grab all the components otherwise and assemble my own. I don't know what I'd use the GPIO ports for but I'm glad they're there!</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/6/bright3.png"/>
-    <p>I'm really bummed about the keys. Not being able to do diagonals is one thing, but the noise is another. :/</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
-    <p>I'm sure someone will make a 3D printed overlay for the keys that will allow for diagonal play...it's just pressing two down at once, right? Or so you'd think...</p>
-    <p>I'm a general fan of clicky things but it really depends on the type of click. My clicky desktop keyboard - awesome. Tiny little clicky buttons that sound like fingernails getting clipped - dunno about that.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi31.png"/>
-    <p>I don't have a PocketCHIP yet but it's easy to imagine what the keys are like based on other similar devices I've seen. It reminds me of a cheap pocket dictionary I have in a box somewhere. I have low expectations.</p>
-    <p>I want to see what happens when you hand these out to a room full of kids. It's possible that the keypad will be a non-issue for that demographic. It's also possible that they'd be frustrating to work with, in a way that may or may not justify the price. (It may also be a no-brainer to hand out USB or Bluetooth keyboards in that setting.)</p>
-    <p>There's a lot to be said for little computers like these to be low priced, and I think we're still figuring out which compromises work best in different settings. I've seen RaspPi Minecraft hackathons for 10-year-olds that surprised them all at the end by telling them they can keep the RaspPi. Imagine doing that with a PocketCHIP.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/10826/MAX300b.png"/>
-    <p>How well does it handle multiple inputs at once?</p>
-    <p>I'm mostly getting this to thumb-type code and screen-poke assets into Pico projects on the go, and for playing them I'll probably commit a SNES-style USB controller anyhow.</p>
-    <p>And am I the only one who wished USB numpads still had a comma/quote key and a space bar?</p>
-    <p>EDIT: Just got the e-mail update from them that it'll be shipping in SEPTEMBER now.</p>
-    <p>The fucc. I am SO BUMMED. I needed this for on-the-fly dev, and I can't get that going, now...</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/6/bright3.png"/>
-    <p>I'm really not surprised. The company have managed the whole kickstarter and subsequent ordering quite badly.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi31.png"/>
-    <p>Seems on par for most hardware Kickstarters to me. Kickstarters for products are eye opening for how much risk and delay is hidden behind the typical retail experience.</p>
-    <p>(I've backed 115 successfully funded Kickstarters, and about a dozen projects on other crowdfunding platforms, at various levels. 48 haven't fulfilled all rewards yet, but only one or two have visibly bottomed out and may never ship. I count myself lucky.)</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12867/hoodie-stickman.jpg"/>
-    <p>yeah i'm pretty miffed about the thing. ordered at the beginning of may, and was supposed to ship yesterday after the initial delay. midday yesterday i tweet at the guys about status and no update</p>
-    <p>then last night they say itll be another two months (assuming it doesnt get delayed again)? honestly might just cancel at this point, now that reviews are out pointing out issues with the keyboards and everything else. the market is overflowing with cheap project computers these days, its asinine to wait months for one when i can just stick to pico8 on my pc</p>
-    <p>(or hold out hope for a pico8 port to 3ds or something lol)</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
-    <p>Yeah...got the email from Next Thing about shipments being delayed yet again, so now not until September until I hopefully see it.</p>
-    <p>I'm unhappy about it but mostly because I didn't order this at the Kickstarter stage. I ordered from their site as a pre-order, which to me is different. When you fund a Kickstarter you know the risks...when the site just says "Pre-order and it'll be a month" then it should be a month. It's retail at that point so treat it as such. If they didn't have support for the pre-orders they shouldn't have done it...just wait until you have stock and sell then.</p>
-    <p>I'm not cancelling my order or anything, I've waited this long, what's another month? Plus I'm not a project box guy so Pocket was my all-in-one solution for something like this. But at this point I'd rather they have not done pre-order at all. I would have bought it for $70 all the same only without the disappointment of delays...the $20 I saved isn't enough to warrant a 90-day delay, IMO.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi31.png"/>
-    <p>As someone who just now (like a few minutes ago) completed an Adafruit PiGrrl 2 I can say that it's fun to make your own and surprisingly easy to get the electronics working. It's also more than twice as expensive as a PocketCHIP, not even counting tools and labor.</p>
-    <p>(Tangentially, I'll say it's not as easy or fun to fit it into a 3D-printed case. I'll have to come back to it when I have the patience to redo the wiring, troubleshoot the audio amp, and come up with a new way to close it because I messed up the screw holes. Nevertheless I might try one of these next: https://learn.adafruit.com/mini-raspberry-pi-handheld-notebook-palmtop)</p>
-    <p>A 3DS port would be cool. Nintendo recently simplified their developer program; still costs thousands to get dev hardware but it's a cool idea. I got SmileBasic from the app store (http://smilebasic.com/) but never did anything with it.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi24.png"/>
-    <p>I just cancelled my order; too many delays. I wanted this thing for a bunch of summer trips and now I won't have it for any of them. I'm probably going to build a kit or something on my own.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi17.png"/>
-    <p>i canceled my order too, boring situation.<lb/> im now using pico on raspberry (picopi) &gt; http://guillermoamaral.com/read/picopi/<lb/> ... made it portable using a 7 inch lcd :) wikkid! </p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/6/bright3.png"/>
-    <p>I'd love to see a 3DS port, and also a Wii port (everybody has one, if not you can buy one for the price of a beer)</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
-    <p>I think just having a (free) Pico-8 Player would be awesome for every device, just so they can play the games even if they can't do any authoring on those platforms. Just being able to send games around as PNGs is so cool...just save to your image library or whatever and then load through the P8 Player.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/13750/restos_pixel_by_zapilai-d7n8vst.png"/>
-    <p>on the subject of this being on nintendo hardware; the old wiiware servers wont going to be around much longer(dsi shop as well), wiiu and 3ds though still have network support for the foreseeable future.</p>
-    <p>i would look into how they handle things for smilebasic</p>
-    <p>though from personal experience the community is a handful of people trying to make their own games, and majority of people seeking or porting games, then wondering why they have a copyright strike and the game was removed. then focusing on file encryption to redistribute said game. and then a select few who abuse it for homebrew and get it taken off the eshop.</p>
-    <p>anyway sorry for the rant i know that pico's limitations wouldnt allow for most games to be 1:1</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi31.png"/>
-    <p>Let's port picolove to SmileBASIC! =) Srsly though glad to hear it has a community.</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="/bimg/pi/pi26.png"/>
-    <p>Honestly, it looks to me that a Raspberry Pi Zero $5.00, combined with an old school NES controller &lt;&gt; $8.00 connected directly to the GPIO would make a very nice Pico8 setup for around $15-$20. There is a multitude of small screens which could also be tossed into the mix. Even the work of a dedicated Raspberry PI image has been completed (http://guillermoamaral.com/read/picopi/).</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/13750/restos_pixel_by_zapilai-d7n8vst.png"/>
-    <p>there is already a Celeste port on sb so it wouldnt be impossible, and sb has a wiiu version in the works along with phone and pc</p>
-    <graphic src="/gfx/set_like0.png"/>
-    <graphic src="/gfx/top_drop.png"/>
-    <graphic src="https://www.lexaloffle.com/bbs/files/14571/Me.jpg"/>
-    <p>As bad as the delay on pocket chip is, it's not nearly as bad as the $1000 I lost on the OpenPandora handheld...and that was crowd funded before crowdfunding was even a thing.So a couple months delay seems reasonable to me.</p>
-    <p>[Please log in to post a comment]</p>
+    <p>I’ve had a PocketChip in my possession for over a month, and I still don’t know what I say about it. I can’t really recommend anyone buy this thing, and yet I wish everyone owned one. Does that make any sense? It’s not “practical” in the sense that it’s not “practical” for an English major to take advanced mathematics courses, except for the fact that non-practical people like that are some of my favorite people.</p>
+    <head rend="h1">PocketChip review: why do I want this?</head>
+    <p>PocketChip is like a just-for-fun weekend software project that ends up on GitHub but is clearly marked as “not for production use.” Except it’s an embodied physical artifact you can buy for $49.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813345/akrales_160719_1147_A_0039.jpg"/>
+    <p>Here are the facts: PocketChip is a portable, battery-powered Linux computer with a 480 x 272 resistive touchscreen and a QWERTY keyboard. It’s about as powerful as a Raspberry Pi, but it comes with a custom touch-friendly version of Linux that eschews a traditional desktop UI. It’s bigger than a really big phone, and thicker than a laptop, and I can barely cram it into my back pocket.</p>
+    <p>Software-wise, the top level user interface is too simple and lacking in features to feel like a computer, and the command line that’s always one click away is as absurdly powerful as the Linux command line has always been, and just as dense.</p>
+    <p>Like, when I first set it up, I realized there’s no visible option to add a hidden Wi-Fi network. No problem! Just drop down to the command line, type in a scary sequence of characters you found on a forum somewhere, and blammo you’re on the Wi-Fi.</p>
+    <p>That’s not actually what happened, though. In truth, I tried a few commands, thought I’d messed up the whole system (I hadn’t), and tried to flash the firmware back to factory new using a weird Chrome extension that Chip provides for this purpose. Turns out, this doesn’t work over USB 3.0, so I broke my PocketChip and had to buy a USB 2.0 hub to finally fix it again.</p>
+    <p>Does that sound fun to you? I’ll admit it was extremely frustrating in the moment, but at the end of the day I’m kind of proud of myself for breaking this thing and then fixing it. This wasn’t “jailbreaking,” I wasn’t going against the wishes of the manufacturer. PocketChip is my computer to do with what I please, and it really feels like that.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813339/akrales_160719_1147_A_0139.jpg"/>
+    <p>The other standout feature of PocketChip is Pico-8. Pico-8 is a “fantasy console” which runs beautifully on PocketChip and provides endless hours of potential entertainment. And then there’s the best part of Pico-8: you can code your own games, and modify the code of other games you download. It’s like a weird alternate history where Commodore and Texas Instruments rule the video game industry 20 years ago instead of Nintendo. A huge portion of professional programmers got their start by tinkering with games, and PocketChip makes that experience front and center with Pico-8.</p>
+    <p>Except for the fact that it kind of sucks to use PocketChip to code or play Pico-8 games. The clicky QWERTY keys are pretty to look at, but they’re terrible for typing. It takes way too much pressure to click, and I’m still not good at using the function key and non-standard layout for special characters — a must for coding. It’s almost painful to try and play an action game, and for coding I much prefer to plug in a USB keyboard.</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813335/akrales_160719_1147_A_0221.jpg"/>
+    <p>And then once you have a keyboard plugged in, there’s the problem of tapping on the screen. Pico-8’s interface was designed for a mouse, and you basically need a stylus to use it well. I originally had dreams of coding games on the Pico-8 during my subway commute, but frankly I’d be more comfortable using a laptop on the train.</p>
+    <p>But isn’t it kind of cool PocketChip has a full-sized USB plug to begin with? Oh, and it has GPIO pin breakouts across the top in case I want to do simple electronics projects. And if I really wanted to I could just take the whole thing apart. And it just looks so dang cool. And it runs real Linux, did I mention that?</p>
+    <graphic src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/6813331/akrales_160719_1147_A_0158.jpg"/>
+    <p>And yet, outside of a couple demos I’ve done for Facebook Live, I hardly ever use PocketChip out of choice or convenience. Pico-8 runs just fine on my computer, and my phone is a million times more useful and entertaining on the go. For instance, PocketChip doesn’t even really have a built-in web browser. You can of course install one of the myriad available for Linux, but they’re all basically broken on the small screen, non-standard Linux distro, and weak hardware.</p>
+    <p>But what did I expect? There are no “upstarts” smaller than Microsoft in the mobile space. There’s a wide divide between Maker Faires and the glossy shelves of the Apple Store. Will there ever be a truly open and “free” mobile computer that’s not horribly lacking, or entirely disappointing?</p>
+    <p>Despite all its failings, it feels like PocketChip is a tiny glimmer of hope.</p>
+    <p>Photography by Amelia Krales.</p>
   </main>
   <comments/>
 </doc>

@@ -1,27 +1,162 @@
-<doc sitename="Destructoid" title="Dank Tomb and the PICO-8 Fantasy Console" author="Joel Peterson" date="2017-08-02" url="https://www.destructoid.com/dank-tomb-and-the-pico-8-fantasy-console/" hostname="destructoid.com" categories="Indie;News" fingerprint="bb3a09132bcea598">
+<doc title="Joys of a retro handheld and PICO-8, the RG351V" date="2025-06-05" fingerprint="3304391669e0a4d5">
   <main>
-    <head rend="h2">Coders of the lost Ark</head>
-    <p>A few months ago, a surprise landed in my mail called the PocketCHIP. It was a surprise because I had forgotten I had pre-ordered it, and it ended up getting lost in translation for the better part of four months. A handheld micro-computer using a board similar to that of the Raspberry Pi, it was more built for enthusiasts developing projects, but the real appeal behind it for me was integration with the PICO-8 Fantasy Console by Lexaloffle Games, an engine meant to hearken back to the days of the BASIC programming language on older computers, specifically made to program and modify games.</p>
-    <p>PICO-8 is mainly interesting because of the intense restrictions it places on programmers. You are limited to a space of 128 X 128 pixels, 32k of virtual “cartridge space,” and 4-channel sound. The benefit is that the PICO-8 system provides all the base tools necessary to program a game from scratch including a sprite and sound editor, though it will test your coding chops — using the Lua scripting language means that you will be primarily messing around with code. This is not an engine like RPG Maker that handles most of the hard work for you and requires some programming knowledge.</p>
-    <p>
-      <graphic src="https://i0.wp.com/v1cdn.destructoid.com/pocket1-noscale.jpg?ssl=1"/>
-    </p>
-    <p>But the little community of developing and sharing these “cartridges” which has sprung up around it is fascinating. The first time I booted up PICO-8 on my pocket chip and updated the available library of games, I sat for a good hour or two just perusing everything. Apart from games there are plenty of technical demos showing off what can be done on the little platform that were evocative of the demo scene springing up around the Commodore VIC-20 and C64 computers.</p>
-    <p>Watching a sphere bounce around in a little 3D space, amazing pixel art, and even some of the chiptunes produced on this thing are truly impressive examples of what creative programming can do. The games though simple were fun to play, but not a great experience on the PocketCHIP itself, with its unfriendly microswitch dome buttons making it difficult to perform otherwise simple actions. And a lot of them were over in just a screen or two, impressive though they otherwise might have been on a technical level.</p>
-    <p>That leads me to Dank Tomb, a recent PICO-8 title by Jakub Wasilewski, and one of the finest examples of how to push the limitations of the PICO-8. Jakub reached out to Destructoid to share his new game with us, and I jumped on the opportunity to take a look at it, being familiar with the platform it was designed for.</p>
-    <p>In Dank Tomb, you are an Indiana Jones-esque adventurer exploring ancient ruins and uncovering clues to piece together a larger backstory. Utilizing a top-down perspective, the game tasks you with finding seven golden idols throughout the maze-like tomb, collecting other various items as you go to aid you on solving its many room puzzles. The puzzles are fun and varied; the controls are simply move, jump, and use an item; and there are some really tricky platforming sections here that I found to be quite a challenge even early on.</p>
-    <p>
-      <graphic src="https://i0.wp.com/v1cdn.destructoid.com/danktomb2-noscale.jpg?ssl=1"/>
-    </p>
-    <p>Most PICO-8 games are only a few minutes long, but Jakub has worked hard to make sure there is plenty of content here. On the pay-what-you-want site Jakub has put the game up on, you can play in your browser and it will save your progress, offering a few hours of solid gameplay to get through before it is over.</p>
-    <p>The graphics are impressive. The real time lighting here is fantastic, and it’s hard to imagine that this game is contained within 32 kilobytes of memory. I asked Jakub for his thoughts on working with (or against, depending on how you look at it) the PICO-8 platform.</p>
-    <quote>
-      <p>“PICO-8 is unique in how productive you can be in it, compared to other game development environments, chiefly due to its limitations. In a modern development pipeline, it takes multiple people to add one simple character to the game, since it has to be concepted, modelled, textured and animated, before it goes anywhere close to the actual engine. In PICO-8, it’s a matter of minutes…The limits built into the system are strict, but they are also liberating – they let you move fast and enjoy yourself…..Working against PICO-8’s technical limits can be exhilarating. It takes a lot of specialized graphics knowledge and a lot of content to even come close to maxing out a modern GPU. Not so on the PICO-8. Real-time shadows, basically a stock feature in any modern 3D engine, are *the* major coding feat of Dank Tomb. There is a thriving scene of people doing all sorts of demos of things that shouldn’t be possible on an 8-bit fantasy console, most of which wouldn’t impress anybody if all they took was a ten-line shader…”</p>
-    </quote>
-    <p>With microcomputers such as the Raspberry Pi back in vogue, we have a whole new generation of budding developers learning how to code and create games. From engines like Scratch, Game Maker, and RPG Maker to more complex software such as Unity, there are endless opportunities now to start learning to code. But the early heyday of the cheap home computer is long past. The simple programming languages kids grew up with in the eighties, and the strict hardware they were forced to learn inside and out and get really creative with is gone — so it is nice to see projects such as PICO-8 pop up that emulate this experience. Art and adversity go hand in hand, so the restrictions, artificial though they may be with the PICO-8, can lead to some really interesting game design.</p>
-    <p>Apart from checking out Dank Tomb, the PICO-8 engine is available on PC for purchase on the Lexaloffle website for $14.99. However, if you buy its sister engine Voxatron, a 3D voxel-based fantasy console out now in alpha for $19.99, you will get PICO-8 and all future updates as a part of the package.</p>
+    <head rend="h1">The Agony and Ecstasy of the PocketCHIP</head>
+    <p>I arrived at PICO-8 because I bought a PocketCHIP back in 2016. The PocketCHIP came pre-loaded with PICO-8 and prior I had no concept of a "fantasy" console, but I was excited to make games again. Unfortunately, the PocketCHIP was a beautiful-yet-awful piece of hardware.</p>
+    <p>Essentially, the PocketCHIP was a Raspberry Pi-like mini computer wrapped in a case with a touchscreen and keyboard. On the surface, the PocketCHIP was a pretty raw looking piece of hardware...but I dug the style and was excited when it arrived. Yet I quickly found out that the experience of the PocketCHIP was something to be desired.</p>
+    <graphic src="/media/12806/uploader.jpg"/>
+    <head rend="h2">All bark and no bite</head>
+    <p>The keyboard was awful and despite coming with PICO-8 -- a game hub -- playing games was very unsatisfying. I needed a new bezel with a built in d-pad just to make playing games tolerable. I even had to put nail polish on keys to know what did what. In short, it was not fun to play on. But it did lead me to PICO-8 and for that I'm thankful.</p>
+    <p>Since then I've slapped PICO-8 on various Pi game stations and obviously played on my PC. Playing PICO-8 on a phone is certainly do-able but I'm not keen to the virtual d-pad and buttons...but in a pinch, it gets the job done.</p>
+    <p>But this week I got what I think is a really good solution for getting PICO-8 in my hands in a way that is comfortable, reliable, and satisfying. I got an Anbernic RG351V handheld and it's been a true joy.</p>
+    <head rend="h1">Better late than never</head>
+    <p>I know I'm kinda late to the retro handheld party but here I am. I did some research and learned what I could about what's available - and there's a lot out there. I settled on the RG351V because the form factor was something I liked and all the reviews I read talked it up well.</p>
+    <p>Yes, The RG351 will play a ton of your old console games. Believe me, I've been loading it up with all the PC Engine and NeoGeo games I love to play, but I have to admit that easy PICO-8 setup was a big selling point. And it wasn't a lie.</p>
+    <p>Putting PICO-8 on this thing was a matter of copying some files into a folder and that's it. The RG351V has built-in wifi so it'll launch right into Splore and you're golden.</p>
+    <graphic src="/media/12806/351p8.jpg"/>
+    <graphic src="/media/12806/invop8sq.jpg"/>
+    <head rend="h2">The experience you deserve</head>
+    <p>I know many, many people play our P8 games on the web through the site (probably) using the keyboard. At best, you're on a PC with a gamepad. This is fine and I appreciate people playing something I've created, but when I bought that PocketCHIP and started making games, the handheld experience and fun is what I was chasing. Where the PocketCHIP failed hard, the RG351V succeeds in spades.</p>
+    <p>To say my PICO-8 playtime will increase now is an understatement. My P8 play had decreased over the past couple years due to other things happening in life, yes, but also just because playing on my laptop isn't really convenient nor that enjoyable. Playing on my big TV is okay but lets be honest, our 128x128 games lose a little something on a giant screen.</p>
+    <p>There are a ton of retro handheld options out there now, from big to tiny, cheap to expensive. You probably already have one but if not, look into it. If you've been on the fence, let PICO-8 be your excuse and maybe get yourself one for Christmas.</p>
+    <p>This is the type of experience PICO-8 deserves and you deserve.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/media/14590/2_2bitchuck.png"/>
+    <p>After watching the Lazy Devs video, I ordered a Gameforce. Different system, but I 100% agree, it's like a whole new and better world playing games on this than on the web or even in PICO-8 locally. It even has me dusting off some old forgotten game code because I can imagine playing those games on this thing. Hopefully I'll find some time to bring at least one of them across the finish line. It is tremendous fun seeing a game you wrote on a system like this :)</p>
+    <graphic src="/media/14590/IMG_20211018_110433.jpg"/>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <graphic src="/media/15232/90_anbernic rg-350.png"/>
+    <p>I have an RG-350, this very one. I used Tac-08 to run my Pico-8 programs on it. How are you running yours ? To my knowledge the RG-350 cannot run Pico-8 (.p8 / p8.png files) by default.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/media/41031/avapourwok.png"/>
+    <p>RG351 have a different processor that is capable of running the real pico8 program (using the raspbian build).</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>Now @merwok, you are telling me I can post a .p8 in a native purchased RG351 and it will run with no difficulties ?</p>
+    <p>Does this include the following commands which do NOT run in Tac-08 ?</p>
+    <p>FLIP()<lb/> CSTORE()<lb/> RELOAD()</p>
+    <p>If so that is very good news. I earlier (2-years ago) purchased my RG-350 for $85.</p>
+    <p>Please let me know where to purchase RG-351 that can run all Pico-8 programs and commands. Thanks !</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
+    <p>My RG351 had a pico-8 folder as part of the 351 Elec install image that I used. All I needed to do was copy 3 files from my Pico-8 folder on my PC and it just worked. It even comes with a script that loads Splore from the UI. You can also drop the PNG files in the carts folder and they'll show up right in the UI and you can launch them directly. Really easy and handy.</p>
+    <p>I haven't hit any carts yet that have crashed or shown me that it can't handle anything. It's my copy of PICO-8 anyway, so it's the latest version.</p>
+    <p>I followed the Retro Game Corp guide and it was perfect. In fact, all his stuff is great to read for anything handheld emulators. Great docs with links and videos.</p>
+    <p>https://retrogamecorps.com/2020/11/12/guide-pico-8-on-retro-handhelds/</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/media/41031/avapourwok.png"/>
+    <p>I’m a bit confused by your questions dw817.</p>
+    <p>The console runs programs. Pico8 is an independent program that needs to be purchased and installed on the machine.</p>
+    <p>Second, I did say it can run the real pico8 program (the raspbian build), so that includes all functions by definition.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>As compatibility is important to everyone, could someone using the RG351 check to see if THIS cart runs correctly ?</p>
+    <p>https://www.lexaloffle.com/bbs/?tid=31950</p>
+    <p>I just checked, it runs fine Online and Offline here.</p>
+    <p>If this cart does not work in RG351 ... then it will not benefit me to get a new portable console.</p>
+    <p>If it DOES run correctly, however, please let me know, and YES I should invest in a new portable console with your thanks, @merwok, @2bitchuck, and @morningtoast.</p>
+    <p>I want to get back in to Pico-8 coding, but using those primary 3-commands listed above which current Tac-08 does not recognize.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/media/14590/2_2bitchuck.png"/>
+    <p>@dw817 I just loaded this up via Splore on the Gameforce. I was able to add a bunch of circles, use "show sprite still here", save the image, clear the screen, and load the image, which put all the circles I had created back on the screen. Not sure if there is anything else to check, but none of those operations crashed or failed that I could tell.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>That's good enough for me, @2bitchuck. Thanks for checking on this.</p>
+    <p>For those interested, CSTORE() and RELOAD() let you load and save up to 12288 bytes of external data using both your sprite and mapper area of memory.</p>
+    <p>You can easily use RELOAD() however to restore your original sprites and mapper data (prior to run) after you have loaded custom data to it.</p>
+    <p>Or you can directly modify your permanent sprite and mapper data via your code thus giving you self-modifying code during execution.</p>
+    <p>As this is 48x more space than the default 256-byte storage, the method is not to be passed up.</p>
+    <p>If you use more than one save file you can record multiple sets of 12288 bytes of data.</p>
+    <p>Now I need to sit down and carefully read the instrux on how to get Pico-8 to run in this new console, RG-351.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>Going to ask as I'm finally ready to make a purchase, are there any differences in the RG351 for running Pico-8 and SPLORE ?</p>
+    <p>So far I've heard of a RG-351V, RG351-M, RG351-MP, and RG351-P.</p>
+    <p>What is the difference between them - and which of these run Pico-8/Splore 0.2.4 + future versions easily and effectively ?</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/media/28088/avatar.png"/>
+    <p>All of these RG351 runs a ARM-CPU, means they can run PICO8 directly using the Raspberry Pi-Builds. No Emulation (like tac08) required.</p>
+    <p>RG351V = "Gameboy-like", 640x480 Screen. Builtin-Wifi.<lb/> RG351P = "GBA-like", 320x480 Screen. Wifi through WLAN-Stick.<lb/> RG351M = "GBA-like", 320x480 Screen. Metal-Case and Builtin-Wifi.<lb/> RG351MP = "GBA-like", 640x480 Screen. Metal-Case and Wifi through WLAN-Stick.</p>
+    <p>If your Main-Goal is to play PICO8-Games, I would avoid RG350-Devices, because they all runs a MIPS-CPU...</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>Hi @Astorek86. Thanks for replying.</p>
+    <p>Yep, I know ... I've got a RG350 a couple years back and while it plays movies and TV shows great, the Tac-08, the only thing available for it in the Pico-8 world doesn't recognize FLIP(), CSTORE(), or RELOAD().</p>
+    <p>Critical commands for my bigger projects altho today I'm trying to code conventionally without using FLIP() - except for debug.</p>
+    <p>So let's see ... There is no 320x240 for 351 ? Hmm ... The model "V" is good then ?</p>
+    <p>Did anyone make a RG351 that has a clamshell design like the GBA-SP ?</p>
+    <graphic src="https://m.media-amazon.com/images/I/41X3B28XR7L._SX385_.jpg"/>
+    <p>That to me would be worth purchasing since you can close it up like a compact and protect the screen and controls.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
+    <p>After 2 months I can happily say the RG351V has been wonderful. It feels good and it plays everything well, including PICO8 games. I've had zero problems with it at all. Buttons still feel good, as does the analog. And with 351 Elec even the UI has been a joy. It's better than anything I've tried to put together myself on a Pi.</p>
+    <p>Having the 4:3 screen wasn't a negative for me because all the retro I play is at that resolution. "Retro" for me is &lt;=PS1 and I'm not after GBA games or anything that is at a wider ratio.</p>
+    <p>The only clam shell I've seen is the Powkiddy, which I briefly considered but figured I'd be happier with the extra power and analog of the RG351. I haven't used a Powkiddy so it might be wonderful.</p>
+    <p>Powkiddy V90<lb/> https://retrogamecorps.com/2021/02/01/review-powkiddy-v90/</p>
+    <p>But whatever you buy, I'd suggest going with the built-in Wifi. Just eliminates the extra step of transfer devices.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>Powkiddy looks great, @morningtoast. Does it run Pico-8 though, I mean, WILL it run you know all Pico-8, now and for the future ?</p>
+    <p>It doesn't need to be able to run anything else except Pico-8 if it's somehow more limited than the RG351V - and can it run Splore and stuff ?</p>
+    <p>Are any of these also legit to run Pico-8 and future Pico-8 ?</p>
+    <p>https://www.amazon.com/s?k=powkiddy+v90&amp;ref=nb_sb_noss_1</p>
+    <p>Or any other clamshell design that runs Pico 8 ? Not yet listed or talked about ?</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/12806/santo.jpg"/>
+    <p>I don't know how well the PowKiddy runs P8...it was just another handheld I came across while doing my research. It looked cute and I did like the clamshell but decided I wanted the analog stick and a bigger screen.</p>
+    <p>You should do some research to find out not only if that thing can run P8 like you want, but how difficult it is to install and get running. The RG351V that I have was a breeze to get P8 running but some of the other handhelds looked like there were a lot of hoops to jump through, if that bothers you.</p>
+    <p>If you're looking for a bullet proof solution to run P8 now and forever...there probably isn't one...but the safe thing is to get the over-powered handheld and you'll probably be safe for a long while. It might cost more but should save you headaches. My RG351V was only $115. I probably could have saved $20-30 getting something older/lesser but that $20 is worth it to me for ease of setup and installation.</p>
+    <p>I did most of my research over at Retro Game Corps. They have a TON of articles and videos all about these handhelds that really helped me make my decision. They have an article just about running PICO8 on these things, worth a read:</p>
+    <p>https://retrogamecorps.com/2020/11/12/guide-pico-8-on-retro-handhelds/</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>I'm buying a Powkiddy now, mostly because of the clamshell design with I sorely missed since GBA SP.</p>
+    <p>If it doesn't do what I want for Pico-8 I'll keep it handy for GBA games and still buy a RG351V for my Pico-8 needs.</p>
+    <p>Thanks guys for all the info !</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/15232/me-square.jpg"/>
+    <p>The PowKiddy I bought from Amazon did not run Pico-8 modern. So I returned it.<lb/> Also BEWARE, the PowKiddy has an 8-bit screen ! If you run PSX FF7 for instance, the video will have ugly blocks in it and not even bother to dither them.</p>
+    <p>So I've been busily running Pico-8 carts in my cellphone yet hate the touchscreen, then I saw this, which is quite exciting !</p>
+    <p>I had no idea you could have joysticks for cellphones !</p>
+    <graphic src="https://image.made-in-china.com/43f34j00pTgfpdQRmcqr/Ipega-Wireless-Bluetooth-Gamepad-Pg-9025-Gaming-Game-Controller-Joystick-Joypad-for-PC-Android-Cell-Phone-iPhone-iPad-TV.webp"/>
+    <p>And this:</p>
+    <graphic src="https://image.made-in-china.com/201f0j00uNBtlCEMYzbp/Bluetooth-Android-Ios-Game-Controller-Special-for-iPad-Android-Pad.webp"/>
+    <p>So, yeah, apparently there are quite a few options of wireless joysticks for cellphones.</p>
+    <p>So the main question I have, can you use a joystick like this or above and run Pico-8 from a browser like Google Chrome on your cellphone where the joystick is recognized for control ?</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/bimg/pi/pi16.png"/>
+    <p>I’m late to this party, but thought I’d mention my main way of playing pico8 is on iOS safari with an 8BitDo zero2 connected over Bluetooth.</p>
+    <p>The play is great but the downside is it’s two pieces so I need to put the phone somewhere (table, stand, car dashboard mount are common for me). Also Bluetooth pairing is occasionally flakey.</p>
+    <p>Given the above I’m planning on getting an rg351v as well. It looks fantastic and as a bonus I get a bunch of other systems to choose from as well.</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="https://www.lexaloffle.com/bbs/files/13750/restos_pixel_by_zapilai-d7n8vst.png"/>
+    <p>Rip all the pockitchip customers who paid for a unit and never received one, then the owners flat out started selling loose units before fulfilling paid preorders</p>
+    <graphic src="/gfx/set_like0.png"/>
+    <graphic src="/gfx/top_drop.png"/>
+    <graphic src="/bimg/pi/pi16.png"/>
+    <p>Update: got the rg351v and it’s great. The wifi makes the splore so much fun.</p>
+    <p>Pretty sure pico8 will work out of the box (via zero-08) but I switched to AmberElec and my purchased copy of pico8. Menus feel more familiar and fewer compatibility issues that way.</p>
+    <p>https://amberelec.org/systems/lexaloffle-pico-8 has the basic setup info. I’ll submit a few tweaks to that doc soon which make launching games a little smoother.</p>
+    <p>[Please log in to post a comment]</p>
   </main>
-  <comments>
-    <p>Published: Aug 2, 2017 9:45 PM GMT+3</p>
-  </comments>
+  <comments/>
 </doc>

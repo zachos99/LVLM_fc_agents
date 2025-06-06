@@ -1,0 +1,16 @@
+{
+  "generated_queries": [
+    {
+      "query": "protesters kneeling in city street with police",
+      "search_type": "text"
+    },
+    {
+      "query": "white woman arrested for praying outside abortion clinic",
+      "search_type": "text"
+    },
+    {
+      "query": "people in full-body coverings kneeling in front of double-decker bus",
+      "search_type": "image"
+    }
+  ]
+}

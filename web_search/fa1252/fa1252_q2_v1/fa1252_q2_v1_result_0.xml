@@ -1,0 +1,489 @@
+<doc sitename="ESPN" title="2024 NFL Season Leaders Total QBR | ESPN" date="2019-10-03" url="https://www.espn.com/nfl/qbr" hostname="espn.com" description="Visit ESPN to view NFL Total QBR for the current and previous seasons" fingerprint="2dcf200e3e5e08a1">
+  <main>
+    <head rend="h1">NFL Total QBR - 2024 Season Leaders</head>
+    <table>
+      <row span="2">
+        <cell role="head">
+          <p>RK</p>
+        </cell>
+        <cell role="head">
+          <p>Name</p>
+        </cell>
+      </row>
+      <row span="2">
+        <cell>1</cell>
+      </row>
+      <row span="2">
+        <cell>2</cell>
+      </row>
+      <row span="2">
+        <cell>3</cell>
+      </row>
+      <row span="2">
+        <cell>4</cell>
+      </row>
+      <row span="2">
+        <cell>5</cell>
+      </row>
+      <row span="2">
+        <cell>6</cell>
+      </row>
+      <row span="2">
+        <cell>7</cell>
+      </row>
+      <row span="2">
+        <cell>8</cell>
+      </row>
+      <row span="2">
+        <cell>9</cell>
+      </row>
+      <row span="2">
+        <cell>10</cell>
+      </row>
+      <row span="2">
+        <cell>11</cell>
+      </row>
+      <row span="2">
+        <cell>12</cell>
+      </row>
+      <row span="2">
+        <cell>13</cell>
+      </row>
+      <row span="2">
+        <cell>14</cell>
+      </row>
+      <row span="2">
+        <cell>15</cell>
+      </row>
+      <row span="2">
+        <cell>16</cell>
+      </row>
+      <row span="2">
+        <cell>17</cell>
+      </row>
+      <row span="2">
+        <cell>18</cell>
+      </row>
+      <row span="2">
+        <cell>19</cell>
+      </row>
+      <row span="2">
+        <cell>20</cell>
+      </row>
+      <row span="2">
+        <cell>21</cell>
+      </row>
+      <row span="2">
+        <cell>22</cell>
+      </row>
+      <row span="2">
+        <cell>23</cell>
+      </row>
+      <row span="2">
+        <cell>24</cell>
+      </row>
+      <row span="2">
+        <cell>25</cell>
+      </row>
+      <row span="2">
+        <cell>26</cell>
+      </row>
+      <row span="2">
+        <cell>27</cell>
+      </row>
+      <row span="2">
+        <cell>28</cell>
+      </row>
+      <row span="2">
+        <cell>29</cell>
+      </row>
+      <row span="2">
+        <cell>30</cell>
+      </row>
+      <row span="2">
+        <cell>31</cell>
+      </row>
+      <row>
+        <cell>32</cell>
+      </row>
+    </table>
+    <table>
+      <row span="9">
+        <cell role="head">QBR</cell>
+        <cell role="head">PAA</cell>
+        <cell role="head">PLAYS</cell>
+        <cell role="head">EPA</cell>
+        <cell role="head">PASS</cell>
+        <cell role="head">RUN</cell>
+        <cell role="head">SACK</cell>
+        <cell role="head">PEN</cell>
+        <cell role="head">RAW</cell>
+      </row>
+      <row span="9">
+        <cell>77.3</cell>
+        <cell>57.6</cell>
+        <cell>661</cell>
+        <cell>107.9</cell>
+        <cell>86.8</cell>
+        <cell>20.1</cell>
+        <cell>-10.1</cell>
+        <cell>1.0</cell>
+        <cell>77.4</cell>
+      </row>
+      <row span="9">
+        <cell>77.3</cell>
+        <cell>53.9</cell>
+        <cell>642</cell>
+        <cell>101.0</cell>
+        <cell>71.3</cell>
+        <cell>28.4</cell>
+        <cell>-5.5</cell>
+        <cell>1.3</cell>
+        <cell>76.6</cell>
+      </row>
+      <row span="9">
+        <cell>74.7</cell>
+        <cell>59.4</cell>
+        <cell>788</cell>
+        <cell>122.6</cell>
+        <cell>106.5</cell>
+        <cell>13.3</cell>
+        <cell>-21.9</cell>
+        <cell>2.9</cell>
+        <cell>74.4</cell>
+      </row>
+      <row span="9">
+        <cell>70.6</cell>
+        <cell>47.3</cell>
+        <cell>698</cell>
+        <cell>98.4</cell>
+        <cell>53.6</cell>
+        <cell>42.2</cell>
+        <cell>-17.9</cell>
+        <cell>2.6</cell>
+        <cell>72.3</cell>
+      </row>
+      <row span="9">
+        <cell>69.3</cell>
+        <cell>23.9</cell>
+        <cell>501</cell>
+        <cell>58.0</cell>
+        <cell>46.8</cell>
+        <cell>4.0</cell>
+        <cell>-5.8</cell>
+        <cell>7.1</cell>
+        <cell>66.2</cell>
+      </row>
+      <row span="9">
+        <cell>68.4</cell>
+        <cell>31.1</cell>
+        <cell>617</cell>
+        <cell>75.5</cell>
+        <cell>71.4</cell>
+        <cell>4.3</cell>
+        <cell>-13.1</cell>
+        <cell>-0.2</cell>
+        <cell>67.1</cell>
+      </row>
+      <row span="9">
+        <cell>67.9</cell>
+        <cell>29.9</cell>
+        <cell>578</cell>
+        <cell>74.3</cell>
+        <cell>59.9</cell>
+        <cell>13.3</cell>
+        <cell>-11.4</cell>
+        <cell>1.1</cell>
+        <cell>67.5</cell>
+      </row>
+      <row span="9">
+        <cell>67.6</cell>
+        <cell>39.4</cell>
+        <cell>698</cell>
+        <cell>98.3</cell>
+        <cell>69.8</cell>
+        <cell>25.1</cell>
+        <cell>-15.5</cell>
+        <cell>3.4</cell>
+        <cell>69.0</cell>
+      </row>
+      <row span="9">
+        <cell>66.5</cell>
+        <cell>29.3</cell>
+        <cell>693</cell>
+        <cell>82.9</cell>
+        <cell>60.3</cell>
+        <cell>19.3</cell>
+        <cell>-12.1</cell>
+        <cell>3.3</cell>
+        <cell>64.5</cell>
+      </row>
+      <row span="9">
+        <cell>65.6</cell>
+        <cell>29.2</cell>
+        <cell>558</cell>
+        <cell>73.7</cell>
+        <cell>45.3</cell>
+        <cell>28.2</cell>
+        <cell>-15.3</cell>
+        <cell>0.3</cell>
+        <cell>67.7</cell>
+      </row>
+      <row span="9">
+        <cell>64.8</cell>
+        <cell>33.1</cell>
+        <cell>640</cell>
+        <cell>82.8</cell>
+        <cell>69.7</cell>
+        <cell>10.0</cell>
+        <cell>-15.2</cell>
+        <cell>3.1</cell>
+        <cell>67.5</cell>
+      </row>
+      <row span="9">
+        <cell>64.7</cell>
+        <cell>22.8</cell>
+        <cell>604</cell>
+        <cell>71.7</cell>
+        <cell>60.3</cell>
+        <cell>5.0</cell>
+        <cell>-11.4</cell>
+        <cell>6.5</cell>
+        <cell>63.0</cell>
+      </row>
+      <row span="9">
+        <cell>61.6</cell>
+        <cell>30.3</cell>
+        <cell>713</cell>
+        <cell>83.5</cell>
+        <cell>67.7</cell>
+        <cell>14.2</cell>
+        <cell>-18.5</cell>
+        <cell>1.5</cell>
+        <cell>64.6</cell>
+      </row>
+      <row span="9">
+        <cell>60.4</cell>
+        <cell>20.4</cell>
+        <cell>703</cell>
+        <cell>76.7</cell>
+        <cell>64.4</cell>
+        <cell>5.9</cell>
+        <cell>-20.0</cell>
+        <cell>6.5</cell>
+        <cell>60.1</cell>
+      </row>
+      <row span="9">
+        <cell>60.3</cell>
+        <cell>16.0</cell>
+        <cell>465</cell>
+        <cell>51.9</cell>
+        <cell>45.6</cell>
+        <cell>4.7</cell>
+        <cell>-9.8</cell>
+        <cell>1.6</cell>
+        <cell>61.9</cell>
+      </row>
+      <row span="9">
+        <cell>59.5</cell>
+        <cell>6.7</cell>
+        <cell>350</cell>
+        <cell>33.1</cell>
+        <cell>23.9</cell>
+        <cell>7.2</cell>
+        <cell>-7.7</cell>
+        <cell>2.0</cell>
+        <cell>56.7</cell>
+      </row>
+      <row span="9">
+        <cell>58.6</cell>
+        <cell>9.8</cell>
+        <cell>475</cell>
+        <cell>43.2</cell>
+        <cell>27.1</cell>
+        <cell>14.7</cell>
+        <cell>-13.3</cell>
+        <cell>1.3</cell>
+        <cell>57.3</cell>
+      </row>
+      <row span="9">
+        <cell>56.8</cell>
+        <cell>15.6</cell>
+        <cell>708</cell>
+        <cell>69.1</cell>
+        <cell>49.9</cell>
+        <cell>17.7</cell>
+        <cell>-9.6</cell>
+        <cell>1.5</cell>
+        <cell>57.7</cell>
+      </row>
+      <row span="9">
+        <cell>55.6</cell>
+        <cell>3.0</cell>
+        <cell>370</cell>
+        <cell>30.8</cell>
+        <cell>25.7</cell>
+        <cell>6.7</cell>
+        <cell>-8.4</cell>
+        <cell>-1.6</cell>
+        <cell>52.8</cell>
+      </row>
+      <row span="9">
+        <cell>54.1</cell>
+        <cell>10.4</cell>
+        <cell>496</cell>
+        <cell>44.8</cell>
+        <cell>33.4</cell>
+        <cell>12.0</cell>
+        <cell>-10.9</cell>
+        <cell>-0.5</cell>
+        <cell>57.4</cell>
+      </row>
+      <row span="9">
+        <cell>53.8</cell>
+        <cell>9.7</cell>
+        <cell>739</cell>
+        <cell>69.3</cell>
+        <cell>57.3</cell>
+        <cell>7.7</cell>
+        <cell>-23.3</cell>
+        <cell>4.3</cell>
+        <cell>54.6</cell>
+      </row>
+      <row span="9">
+        <cell>51.3</cell>
+        <cell>2.8</cell>
+        <cell>429</cell>
+        <cell>38.4</cell>
+        <cell>31.7</cell>
+        <cell>3.9</cell>
+        <cell>-13.7</cell>
+        <cell>2.8</cell>
+        <cell>52.3</cell>
+      </row>
+      <row span="9">
+        <cell>50.4</cell>
+        <cell>1.6</cell>
+        <cell>528</cell>
+        <cell>46.0</cell>
+        <cell>49.5</cell>
+        <cell>-6.1</cell>
+        <cell>-11.9</cell>
+        <cell>2.6</cell>
+        <cell>51.1</cell>
+      </row>
+      <row span="9">
+        <cell>49.8</cell>
+        <cell>0.0</cell>
+        <cell>672</cell>
+        <cell>55.8</cell>
+        <cell>53.3</cell>
+        <cell>-0.3</cell>
+        <cell>-22.9</cell>
+        <cell>2.8</cell>
+        <cell>50.0</cell>
+      </row>
+      <row span="9">
+        <cell>48.0</cell>
+        <cell>-6.3</cell>
+        <cell>692</cell>
+        <cell>51.7</cell>
+        <cell>43.2</cell>
+        <cell>5.7</cell>
+        <cell>-19.6</cell>
+        <cell>2.8</cell>
+        <cell>46.8</cell>
+      </row>
+      <row span="9">
+        <cell>47.8</cell>
+        <cell>-3.6</cell>
+        <cell>459</cell>
+        <cell>34.5</cell>
+        <cell>26.5</cell>
+        <cell>5.5</cell>
+        <cell>-12.0</cell>
+        <cell>2.5</cell>
+        <cell>47.2</cell>
+      </row>
+      <row span="9">
+        <cell>47.4</cell>
+        <cell>-6.1</cell>
+        <cell>375</cell>
+        <cell>24.9</cell>
+        <cell>8.8</cell>
+        <cell>15.9</cell>
+        <cell>-5.6</cell>
+        <cell>0.2</cell>
+        <cell>44.2</cell>
+      </row>
+      <row span="9">
+        <cell>46.7</cell>
+        <cell>-11.2</cell>
+        <cell>771</cell>
+        <cell>50.4</cell>
+        <cell>37.9</cell>
+        <cell>10.1</cell>
+        <cell>-26.4</cell>
+        <cell>2.5</cell>
+        <cell>44.9</cell>
+      </row>
+      <row span="9">
+        <cell>45.3</cell>
+        <cell>-4.9</cell>
+        <cell>351</cell>
+        <cell>22.3</cell>
+        <cell>19.7</cell>
+        <cell>2.4</cell>
+        <cell>-6.9</cell>
+        <cell>0.2</cell>
+        <cell>45.1</cell>
+      </row>
+      <row span="9">
+        <cell>41.0</cell>
+        <cell>-7.1</cell>
+        <cell>360</cell>
+        <cell>21.2</cell>
+        <cell>22.7</cell>
+        <cell>-3.8</cell>
+        <cell>-3.8</cell>
+        <cell>2.4</cell>
+        <cell>43.0</cell>
+      </row>
+      <row span="9">
+        <cell>38.1</cell>
+        <cell>-14.5</cell>
+        <cell>371</cell>
+        <cell>17.0</cell>
+        <cell>12.4</cell>
+        <cell>1.0</cell>
+        <cell>-12.1</cell>
+        <cell>3.6</cell>
+        <cell>36.6</cell>
+      </row>
+      <row>
+        <cell>27.8</cell>
+        <cell>-31.9</cell>
+        <cell>426</cell>
+        <cell>5.1</cell>
+        <cell>8.3</cell>
+        <cell>-3.7</cell>
+        <cell>-15.1</cell>
+        <cell>0.5</cell>
+        <cell>25.7</cell>
+      </row>
+    </table>
+    <head rend="h3">Glossary</head>
+    <list rend="ul">
+      <item>QBR:Adjusted Total Quarterback Rating, which values the quarterback on all play types on a 0-100 scale adjusted for the strength of opposing defenses faced.</item>
+      <item>PAA:Number of points contributed by a quarterback, accounting for QBR and how much he plays, above the level of an average quarterback.</item>
+      <item>PLAYS:Plays on which the QB has a non-zero expected points contribution. Includes most plays that are not handoffs.</item>
+      <item>EPA:Total expected points added with low leverage plays, according to ESPN Win Probability model, down-weighted.</item>
+      <item>PASS:Expected points added on pass attempts with low leverage plays down-weighted.</item>
+      <item>RUN:Clutch-weighted expected points added through rushes</item>
+      <item>SACK:Expected points added on sacks with low leverage plays down-weighted.</item>
+      <item>PEN:Expected points added on penalties with low leverage plays down-weighted.</item>
+      <item>RAW:Raw Total Quarterback Rating, which values quarterback on all play types on a 0-100 scale (not adjusted for opposing defenses faced)</item>
+    </list>
+  </main>
+  <comments/>
+</doc>

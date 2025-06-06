@@ -1,64 +1,35 @@
-import requests
 import json
 import os
-import random
-
 
 #web_search.
-from web_search.utils import scrape_multiple_urls, save_image_urls_from_links, build_excluded_query
-
-from dotenv import load_dotenv
-import os
-
-from search_engines import Google, http_client
-
-load_dotenv()
-
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-CSE_ID = os.getenv("CSE_ID")
-
-# Domains to exclude from search
-# "reddit.com" ??
-BLOCKED_DOMAINS = ["facebook.com", "instagram.com", "pinterest.com", "youtube.com", "x.com", "flickr.com"]
-
-
-
-def google_search_call(base_query, image_search, numResults):
-    url = 'https://www.googleapis.com/customsearch/v1'
-  
-    # Build query for domain exclusion
-    query = build_excluded_query(base_query, BLOCKED_DOMAINS)
-
-    params = {
-        'q': query,
-        'key': GOOGLE_API_KEY,
-        'cx': CSE_ID,
-        'num': numResults,
-    }
-    if image_search:
-        params["searchType"] = "image"
-
-    response = requests.get(url, params=params)
-    return response.json()
+from web_search.utils import scrape_multiple_urls, save_image_urls_from_links
+from web_search.search_methods import google_search_call, duckduckgo_scraping_call,serp_scraping_call
 
 
 
 def search_and_scrap_results(parent_dir, query, queryID, numResults, isImageSearch=False):
 
-    api_mode = False
+    ########################################################################
+    # REPLACE IT WITH ANOTHER FUNCTION WHEN WE WILL ADD DIFFERENT ENGINES #
+    #######################################################################
+    api_mode = "Google"
 
-    if(api_mode):
-        print('\nAPI Mode...\n')
+    if(api_mode=="Google"):
+        print('\nGoogle API Mode...\n')
         results = google_search_call(query,isImageSearch,numResults)
-    else:
+    elif (api_mode=='DDG'):
+        ## Searching with duckduckgo-search py library
+        print('\nDuckDuckGo Mode...\n')
+        results  = duckduckgo_scraping_call(query,numResults, isImageSearch)
+    elif(api_mode=="SERP"):
+        ## SERP scraping with git repo
         print('\nSERP Scraping Mode...\n')
-        ########################################################################
-        # REPLACE IT WITH ANOTHER FUNCTION WHEN WE WILL ADD DIFFERENT ENGINES #
-        #######################################################################
         results = serp_scraping_call(query,numResults)
+    else:
+        print("Please enter a valid search mode!")
 
-    print(f"\nGoogle Search results for '{query}':\n")
+
+    print(f"\nSearch results for '{query}':\n")
     for item in results['items']:
         print(item['title'], item['link'])
 
@@ -103,24 +74,12 @@ def run_searches_from_query_file(entry_id, is_image_search=False, num_results=5)
 
 
 
-def serp_scraping_call(query, num_results):
 
-    # Add website exceptions to the query and search Google
-    search_query = build_excluded_query(query, BLOCKED_DOMAINS)
 
-    engine = Google()
-    print("\n~~~~~~~~~~~~~~~~~~\nQuery is:",query,"\n~~~~~~~~~~~~~~~~~~\n\n")
 
-    print("Waiting a bit...")
-    engine._delay = random.uniform(10, 20)
-    engine._http_client = http_client.HttpClient() # Fresh session clears cookies
-    engine.set_headers({'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"})
 
-    results = engine.search(search_query, pages=1)
 
-    return {
-        "items": results[:num_results]
-    }
+
 
 """
     Test a specific query

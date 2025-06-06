@@ -36,7 +36,7 @@ from web_search.google_search import run_searches_from_query_file
 """
 
 
-ENTRY_ID = 'mi0431'
+ENTRY_ID = 'ma2975'
 
 POST_PROCESSING_PLATFORM = 'openrouter'
 POST_PROCESSING_MODEL = 'qwen/qwen-2.5-vl-7b-instruct:free'
@@ -72,11 +72,10 @@ print('\nAnalyzing entry:', ENTRY_ID)
 
 print(f"\n\nGenerating {NUM_QUERIES} queries...\n")
 
-#queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
+queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
 
 
-print("\n\nSearching the web...")
-# Also saving search results somewhere?
+print("\n\nSearching the web...") # Also saving search results somewhere?
 
 run_searches_from_query_file(entry_id=ENTRY_ID, num_results = RESULTS_PER_QUERY)
 
