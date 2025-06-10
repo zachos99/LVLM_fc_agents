@@ -4,6 +4,7 @@ import re
 from PIL import Image
 import requests
 from io import BytesIO
+import html
 
 
 
@@ -50,14 +51,20 @@ def readable_print_for_debugging(text):
         Save content in an a readable format for debugging
         Adds newlines between tags and markers to improve readability of cleaned HTML/XML-like text.
     """
-    # Add newline after each closing tag, before each opening tag and before/after [image x] markers
+    # Add newline after each closing tag
     text = re.sub(r'(</[^>]+>)', r'\1\n', text)
-    text = re.sub(r'(?<!\n)(<[^/][^>]*>)', r'\n\1', text)
-    text = re.sub(r'(\[image \d+\])', r'\n\1\n', text)
 
-    # Remove excessive blank lines
+    # Add newline before each opening tag (except closing tags)
+    text = re.sub(r'(?<!\n)(<[^/][^>]*>)', r'\n\1', text)
+
+    # Add newline before and after [image ...] markers (supports optional description)
+    text = re.sub(r'(\[image \d+(?:, description=\'[^\']*\')?\])', r'\n\1\n', text)
+
+    # Normalize multiple newlines and strip each line
     lines = [line.strip() for line in text.split('\n')]
-    pretty_text= "\n".join(line for line in lines if line)
+    pretty_text = "\n".join(line for line in lines if line)
+
+
     with open("evidence_filtering/output_debug.xml", "w", encoding="utf-8") as f:
         f.write(pretty_text)
 
@@ -69,27 +76,41 @@ def clean_graphic_tags(main_elem, image_urls):
     """
     Replaces <graphic> tags with [image id] markers using known image URLs.
     """
-    image_url_map = {img["url"]: img["id"] for img in image_urls}
 
-    # Convert <main> element to string
-    main_str = ET.tostring(main_elem, encoding='unicode')   
+    # Convert <main> to string
+    main_str = ET.tostring(main_elem, encoding='unicode')
 
+    # Build suffix map for matching - take both url and alt description (if it exists)
+    suffix_map = {}
+    for img in image_urls:
+        url = img.get("url", "")
+        if not url:
+            continue
+        filename = url.split("/")[-1]
+        suffix_map[filename] = (img["id"], img.get("alt", ""))
+
+    
     def replace_graphic(match):
-        src = match.group(1)
-        matched_id = None
-        for url, img_id in image_url_map.items():
-            if url.endswith(src):  # Match by suffix
-                matched_id = img_id
-                break
-        return f"[image {matched_id}]" if matched_id else ""
+        src = match.group(1).strip()
+        src = html.unescape(src)  # Decode &amp; to & to avoid xml/json mismatches
+        src_filename = src.split("/")[-1]
 
-    # Replace <graphic src="..."/> with [image id]
+        matched = suffix_map.get(src_filename)
+
+        if not matched:
+            print(f"[⚠️] No match for <graphic> src='{src}'")
+            return ""
+
+        img_id, alt = matched
+        if alt:
+            return f"[image {img_id}, description='{alt}']"
+        return f"[image {img_id}]"
+
+    # Apply regex replacement
     pattern = r'<graphic\s+[^>]*src="([^"]+)"[^>]*/>'
     cleaned_main = re.sub(pattern, replace_graphic, main_str)
 
-
     return cleaned_main
-
 
 
 
@@ -122,7 +143,7 @@ def process_evidence(xml_path, image_json_path):
         print("Image JSON loading failed!")
         return {"valid": False, "reason": f"Image JSON loading failed: {e}", "metadata": metadata}
     
-     # Map each image URL to an ID
+    # Map each image URL to an ID
     image_url_map = {}
     image_urls = []
     for idx, image in enumerate(images, start=1):
@@ -139,6 +160,7 @@ def process_evidence(xml_path, image_json_path):
         image_urls.append({
             "id": idx,
             "url": url,
+            "alt": image.get("image_url", {}).get("alt", "").strip(),
             "source_url": source_url,
             "valid_image": is_valid,
             "reason": reason
@@ -153,7 +175,7 @@ def process_evidence(xml_path, image_json_path):
         return {"valid": False, "reason": "Too little meaningful text", "metadata": metadata}
     
 
-    # Should also add filtering/warning for scraping cookies policies or 'enable Javascript' errors? 
+    # ?? Should also add filtering/warning for scraping cookies policies or 'enable Javascript' errors? 
 
     return {
         "valid_evidence": True,

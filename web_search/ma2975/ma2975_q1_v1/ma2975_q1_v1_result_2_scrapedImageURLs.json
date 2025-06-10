@@ -4,7 +4,8 @@
     "source_url": "https://whyy.org/articles/philly-swat-officer-criminally-charged-after-pepper-spraying-kneeling-protesters/",
     "type": "image_url",
     "image_url": {
-      "url": "https://whyy.org/wp-content/uploads/2020/06/Image-from-iOS-47-768x537.jpg"
+      "url": "https://whyy.org/wp-content/uploads/2020/06/Image-from-iOS-47-768x537.jpg",
+      "alt": "Police load arrested protesters into a Sheriff’s Office bus after closing Route 676 in both directions."
     }
   },
   {
@@ -12,7 +13,8 @@
     "source_url": "https://whyy.org/articles/philly-swat-officer-criminally-charged-after-pepper-spraying-kneeling-protesters/",
     "type": "image_url",
     "image_url": {
-      "url": "https://whyy.org/wp-content/uploads/2020/06/Image-from-iOS-42.jpg"
+      "url": "https://whyy.org/wp-content/uploads/2020/06/Image-from-iOS-42.jpg",
+      "alt": "Police arrest dozens of protesters on Route 676 near 21st Street after they blocked traffic."
     }
   },
   {
@@ -20,7 +22,8 @@
     "source_url": "https://whyy.org/articles/philly-swat-officer-criminally-charged-after-pepper-spraying-kneeling-protesters/",
     "type": "image_url",
     "image_url": {
-      "url": "https://whyy.org/wp-content/uploads/2020/04/WHYY-News-logo-2023-square.png"
+      "url": "https://whyy.org/wp-content/uploads/2020/04/WHYY-News-logo-2023-square.png",
+      "alt": ""
     }
   }
 ]

@@ -5,6 +5,7 @@ import re
 import json
 from datetime import datetime
 from urllib.parse import urljoin
+import xml.etree.ElementTree as ET
 
 import trafilatura
 from trafilatura.downloads import fetch_url
@@ -21,7 +22,29 @@ def extract_and_fix_image_urls(xml_response, base_url):
     if not isinstance(xml_response, str):
         return []
     
+    try:
+        root = ET.fromstring(xml_response)
+    except ET.ParseError:
+        return []
     
+    image_data = []
+    for graphic in root.iter("graphic"):
+        src = graphic.attrib.get("src")
+        alt = graphic.attrib.get("alt", "")
+
+        if not src:
+            continue
+
+        full_url = src if src.startswith("http") else urljoin(base_url, src)
+
+        image_data.append({
+            "url": full_url,
+            "alt": alt
+        })
+
+    return image_data
+
+    """
     # Find all image src attributes using regex
     img_srcs = re.findall(r'src="([^"]+)"', xml_response)
     
@@ -35,7 +58,7 @@ def extract_and_fix_image_urls(xml_response, base_url):
             full_urls.append(urljoin(base_url, src))
 
     return full_urls
-
+    """
 
 def fetch_dynamic_html(url):
     with sync_playwright() as p:
@@ -101,10 +124,11 @@ def scrape_url(url):
         print(f"⚠️ Failed to extract from {url}")
         return None, []
 
-    image_url_list = extract_and_fix_image_urls(result,url)
+    image_data = extract_and_fix_image_urls(result, url)
+    return result, image_data
 
-
-    return result , image_url_list
+    #image_url_list = extract_and_fix_image_urls(result,url)
+    #return result , image_url_list
 
 
 
@@ -140,7 +164,11 @@ def scrape_multiple_urls(items,query_id,parent_dir):
             "title": title,
             "source_url": url,
             "type": "image_url",
-            "image_url": {"url": img}
+            "image_url": {
+                "url": img.get("url"),
+                "alt": img.get("alt", "")
+            }
+            #"image_url": {"url": img}
         } for img in image_list]
 
         with open(f"{save_dir}/{query_id}_result_{i}_scrapedImageURLs.json", "w", encoding="utf-8") as f:

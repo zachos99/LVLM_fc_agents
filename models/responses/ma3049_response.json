@@ -1,0 +1,27 @@
+{
+  "post_text": "Sage Wall, Montana found in 1996\n\nThe official narrative by the goverment says that it’s ”natural geological formations”.\n\nIt’s interesting how they lie, manipulate and twist everything out of reality. The truth is there just open your eyes. https://t.co/bFhNHkKKFz",
+  "image_url": "media_manipulated_class/photo_3049_0.jpg",
+  "structured_response": {
+    "image_description": "The image shows a large stone wall with a person standing in front of it, pointing towards the wall. The wall appears to be made of large, rectangular stones, some of which are weathered and have moss or lichen growing on them. The setting is outdoors, with a forested area in the background and a grassy, slightly barren ground in the foreground. The person is wearing a backpack and a wide-brimmed hat, suggesting they are exploring or observing the site.",
+    "ocr_text": "",
+    "manipulation_signs": "No obvious signs of manipulation. The image appears to be a real photograph of a natural stone structure, possibly a historical or geological formation. The lighting, shadows, and details in the stones and surrounding environment are consistent with natural conditions.",
+    "named_entities": [
+      "Sage Wall",
+      "Montana",
+      "27 January 2025",
+      "government",
+      "natural geological formations"
+    ],
+    "five_ws": {
+      "who": "A person exploring or observing the Sage Wall",
+      "what": "The person is pointing at the Sage Wall, likely indicating interest or significance",
+      "where": "Sage Wall, Montana",
+      "when": "The post is dated 27 January 2025, and the Sage Wall was found in 1996",
+      "why": "The post implies skepticism about official narratives, suggesting the Sage Wall is not a \"natural geological formation.\""
+    },
+    "image_text_alignment": "The image shows the Sage Wall, which aligns with the text stating \"Sage Wall, Montana\" was found in 1996.",
+    "emotive_or_fallacious_language": "The post uses emotive language (\"they lie, manipulate and twist everything out of reality\") and implies skepticism (\"the truth is there just open your eyes\"), but does not present any logical fallacies.",
+    "timestamp_consistency": "The post mentions the Sage Wall was found in 1996, which is consistent with the image showing a real-world location that could be the Sage Wall. The post's timestamp (27 January 2025) does not imply a recent or real-time event, so there is no inconsistency here."
+  },
+  "raw_response": "- **Image Description**: The image shows a large stone wall with a person standing in front of it, pointing towards the wall. The wall appears to be made of large, rectangular stones, some of which are weathered and have moss or lichen growing on them. The setting is outdoors, with a forested area in the background and a grassy, slightly barren ground in the foreground. The person is wearing a backpack and a wide-brimmed hat, suggesting they are exploring or observing the site.\n  \n- **OCR**: No visible text.\n\n- **Manipulation Signs**: No obvious signs of manipulation. The image appears to be a real photograph of a natural stone structure, possibly a historical or geological formation. The lighting, shadows, and details in the stones and surrounding environment are consistent with natural conditions.\n\n- **Named Entities**: Sage Wall, Montana, 27 January 2025, government, natural geological formations.\n\n- **5Ws Extraction**:\n  - **Who is involved?**: A person exploring or observing the Sage Wall.\n  - **What is happening?**: The person is pointing at the Sage Wall, likely indicating interest or significance.\n  - **Where is this taking place?**: Sage Wall, Montana.\n  - **When is it happening (explicit or implied)?**: The post is dated 27 January 2025, and the Sage Wall was found in 1996.\n  - **Why is this happening (if stated)?**: The post implies skepticism about official narratives, suggesting the Sage Wall is not a \"natural geological formation.\"\n\n- **Image-Text Alignment**: The image shows the Sage Wall, which aligns with the text stating \"Sage Wall, Montana\" was found in 1996.\n\n- **Emotive Language or Logical Fallacies**: The post uses emotive language (\"they lie, manipulate and twist everything out of reality\") and implies skepticism (\"the truth is there just open your eyes\"), but does not present any logical fallacies.\n\n- **Timestamp Consistency Check**: The post mentions the Sage Wall was found in 1996, which is consistent with the image showing a real-world location that could be the Sage Wall. The post's timestamp (27 January 2025) does not imply a recent or real-time event, so there is no inconsistency here."
+}

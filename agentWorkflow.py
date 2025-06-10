@@ -35,11 +35,8 @@ from web_search.google_search import run_searches_from_query_file
  -----------------------------------------------------------------------------------------------------
 """
 
-
-ENTRY_ID = 'ma2975'
-
 POST_PROCESSING_PLATFORM = 'openrouter'
-POST_PROCESSING_MODEL = 'qwen/qwen-2.5-vl-7b-instruct:free'
+POST_PROCESSING_MODEL = 'qwen/qwen-2.5-vl-7b-instruct:free' # 'qwen/qwen2.5-vl-32b-instruct:free' #
 
 QUERY_GENERATOR_PLATFORM = 'togetherai'
 QUERY_GENERATOR_MODEL = 'meta-llama/Llama-3.3-70B-Instruct-Turbo-Free'
@@ -66,13 +63,17 @@ TEMPERATURE = 0.2
 
 
 
+ENTRY_ID = 'ma2975'
+
+
+
 print('\nAnalyzing entry:', ENTRY_ID)
 
 #postPreprocessingAgent(ENTRY_ID, POST_PROCESSING_PLATFORM, POST_PROCESSING_MODEL)
 
 print(f"\n\nGenerating {NUM_QUERIES} queries...\n")
 
-queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
+#queryGeneratorAgent(ENTRY_ID, QUERY_GENERATOR_PLATFORM, QUERY_GENERATOR_MODEL, NUM_QUERIES, max_tokens=MAX_TOKENS,temperature=TEMPERATURE)
 
 
 print("\n\nSearching the web...") # Also saving search results somewhere?

@@ -5,8 +5,8 @@ from evidence_filtering.evidencePreprocessing import process_evidence, readable_
 
 
 
-xml_path = "web_search/fa1260/fa1260_q2_v1/fa1260_q2_v1_result_1.xml"
-images_path = "web_search/fa1260/fa1260_q2_v1/fa1260_q2_v1_result_1_scrapedImageURLs.json"
+xml_path = "web_search/ma2975/ma2975_q2_v1/ma2975_q2_v1_result_1.xml"
+images_path = "web_search/ma2975/ma2975_q2_v1/ma2975_q2_v1_result_1_scrapedImageURLs.json"
 
 # Run initial preprocessing
 print("Initial evidence preprocessing...")

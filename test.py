@@ -88,7 +88,8 @@ def get_image_urls_by_ids(json_path, selected_ids, require_valid=True):
 prompt= 'Describe those images'
 path = "evidence_filtering/output.json"
 
-response = mm_inference_openrouter(system_prompt="", user_prompt=prompt,model='qwen/qwen-2.5-vl-7b-instruct:free', image_urls=get_image_urls_by_ids(path,[1,3,4,5]))
+# qwen/qwen2.5-vl-{72,32,3}b-instruct:free  qwen/qwen-2.5-vl-7b-instruct:free
+response = mm_inference_openrouter(system_prompt="", user_prompt=prompt,model='qwen/qwen2.5-vl-32b-instruct:free', image_urls=get_image_urls_by_ids(path,[1,3,4,5,6,7,8,9]))
 
 print("\nResponse:\n", response)
 
