@@ -30,7 +30,7 @@ OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 
 
-def mm_inference_openrouter(system_prompt, user_prompt, model, image_url=None, max_tokens=1024, temperature = 0.2):
+def mm_inference_openrouter(system_prompt, user_prompt, model, image_urls=None, max_tokens=1024, temperature = 0.2):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=OPENROUTER_API_KEY,
@@ -44,10 +44,24 @@ def mm_inference_openrouter(system_prompt, user_prompt, model, image_url=None, m
             "content": system_prompt
         })
 
+    
     user_content = [{"type": "text", "text": user_prompt}]
 
+    """
+    SINGLE IMAGE
     if image_url: 
         user_content.append({ "type": "image_url", "image_url": {"url": image_url} })
+
+    messages.append({
+        "role": "user",
+        "content": user_content
+    })
+    """
+
+    # Handle multiple images
+    if image_urls:
+        for url in image_urls:
+            user_content.append({ "type": "image_url", "image_url": {"url": url} })
 
     messages.append({
         "role": "user",

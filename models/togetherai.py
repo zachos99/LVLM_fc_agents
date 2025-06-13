@@ -19,7 +19,7 @@ Vision:
 
 
 
-def mm_inference_togetherai(system_prompt,user_prompt, model, image_url=None, max_tokens=1024, temperature=0.2):
+def mm_inference_togetherai(system_prompt,user_prompt, model, image_urls=None, max_tokens=1024, temperature=0.2):
 
     client = Together(api_key=TOGETHER_API_KEY)
 
@@ -33,8 +33,10 @@ def mm_inference_togetherai(system_prompt,user_prompt, model, image_url=None, ma
 
     user_content = [{"type": "text", "text": user_prompt}]
 
-    if image_url: 
-        user_content.append({ "type": "image_url", "image_url": {"url": image_url} })
+    # Handle multiple images
+    if image_urls:
+        for url in image_urls:
+            user_content.append({ "type": "image_url", "image_url": {"url": url} })
 
     messages.append({
         "role": "user",

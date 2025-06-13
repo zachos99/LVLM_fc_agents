@@ -3,12 +3,17 @@ from dotenv import load_dotenv
 import os
 import json
 
+from models.openrouter import mm_inference_openrouter
+from models.togetherai import mm_inference_togetherai
+
+
+"""
 load_dotenv()
 
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-def mm_inference_openrouter(system_prompt, user_prompt, model, image_urls=None, max_tokens=25000, temperature=0.2):
+def mm_inference_openrouter(system_prompt, user_prompt, model, image_urls=None, max_tokens=100000, temperature=0.2):
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=OPENROUTER_API_KEY,
@@ -34,6 +39,9 @@ def mm_inference_openrouter(system_prompt, user_prompt, model, image_urls=None, 
         "content": user_content
     })
 
+    print("Submitting", len(image_urls), "images")
+
+
     try:
         completion = client.chat.completions.create(
             model=model, 
@@ -52,7 +60,7 @@ def mm_inference_openrouter(system_prompt, user_prompt, model, image_urls=None, 
     except Exception as e:
         print("❌ API call failed:", e)
         return None
-
+"""
 
 
 
@@ -84,14 +92,19 @@ def get_image_urls_by_ids(json_path, selected_ids, require_valid=True):
 """
     Test adding qwen more than one images
 """
-
+""" """
 prompt= 'Describe those images'
-path = "evidence_filtering/output.json"
+path = "evidence_filtering/evidencePreprocessing/ma2975/ma2975_q1_v1_result_1.json"
 
-# qwen/qwen2.5-vl-{72,32,3}b-instruct:free  qwen/qwen-2.5-vl-7b-instruct:free
-response = mm_inference_openrouter(system_prompt="", user_prompt=prompt,model='qwen/qwen2.5-vl-32b-instruct:free', image_urls=get_image_urls_by_ids(path,[1,3,4,5,6,7,8,9]))
+urls = get_image_urls_by_ids(path,[1,2])
+
+
+# qwen/qwen2.5-vl-{72,32,3}b-instruct:free  qwen/qwen-2.5-vl-7b-instruct:free qwen/qwen2.5-vl-32b-instruct:free
+
+response = mm_inference_openrouter(system_prompt="", user_prompt=prompt,model='qwen/qwen2.5-vl-72b-instruct:free', image_urls=urls, max_tokens=100000)
+
+# Llama vision free supports only one image
+#response = mm_inference_togetherai(system_prompt="", user_prompt=prompt,model='meta-llama/Llama-Vision-Free', image_urls=urls, max_tokens=100000)
 
 print("\nResponse:\n", response)
-
-
 

@@ -1,23 +1,28 @@
-import json
 
-from evidence_filtering.evidencePreprocessing import process_evidence, readable_print_for_debugging
-
+from evidence_filtering.evidencePreprocessingAgent import process_entry_evidence
 
 
 
-xml_path = "web_search/ma2975/ma2975_q2_v1/ma2975_q2_v1_result_1.xml"
-images_path = "web_search/ma2975/ma2975_q2_v1/ma2975_q2_v1_result_1_scrapedImageURLs.json"
+"""
+        Given an entry ID:
+                We first run initial preprocessing
+                Then, 
+"""
+
+ENTRY_ID = 'mi2772' # ma2975    mi2772
+
+
 
 # Run initial preprocessing
-print("Initial evidence preprocessing...")
-processed_evidence = process_evidence(xml_path,images_path)
+process_entry_evidence(ENTRY_ID)
 
-# Save <main> in an a readable format for debugging
-readable_print_for_debugging(processed_evidence.get('text'))
 
-# Save output that we will feed as input to the next step
-with open("evidence_filtering/output.json", "w", encoding="utf-8") as f:
-        json.dump(processed_evidence, f, ensure_ascii=False, indent=2)
+
+
+
+
+
+
 
 
 

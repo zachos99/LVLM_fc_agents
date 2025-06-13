@@ -6,6 +6,7 @@
 # Output folders or logs
 mm_data/
 X_notes_public_files/
+stats/
 
 models/__pycache__/
 

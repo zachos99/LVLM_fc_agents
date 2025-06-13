@@ -176,9 +176,10 @@ def process_evidence(xml_path, image_json_path):
     
 
     # ?? Should also add filtering/warning for scraping cookies policies or 'enable Javascript' errors? 
+    # ?? should we add valid_evidence in this step?
 
     return {
-        "valid_evidence": True,
+        #"valid_evidence": True,
         "metadata": metadata,
         "text": cleaned_main_text,
         "images": image_urls
